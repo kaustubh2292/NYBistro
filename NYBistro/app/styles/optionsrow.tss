@@ -1,0 +1,59 @@
+".cell": {
+	backgroundImage:'/images/categorybkg.png',
+	// backgroundColor:'transparent',
+	height:35,
+	size:Ti.UI.FILL
+},
+".textformat": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:12,
+		fontWeight:'bold'
+	},
+	color:'#a4451c',
+	height:Ti.UI.SIZE
+},
+".checkbox":{
+	backgroundImage:'/images/chkboxunchecked.png',
+	width:'20',
+	height:'20'
+},
+".dollarval": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:12,
+		fontWeight:'bold'
+	},
+	color:'#79b622',
+	height:Ti.UI.SIZE
+}
+
+".celldroid": {
+	backgroundImage:'/aimages/profilebg.png',
+	// backgroundColor:'transparent',
+	height:40
+	//size:Ti.UI.FILL
+},
+".textformatdroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	color:'#a4451c',
+	height:Ti.UI.SIZE
+},
+".checkboxdroid":{
+	backgroundImage:'/aimages/chkboxunchecked.png',
+	width:'25',
+	height:'25'
+},
+".dollarvaldroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	color:'#79b622',
+	height:Ti.UI.SIZE
+}

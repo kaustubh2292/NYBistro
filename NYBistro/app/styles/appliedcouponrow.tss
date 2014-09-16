@@ -1,0 +1,25 @@
+".appliedcouponrow": {
+	backgroundImage:'/images/categorybkg.png',
+	backgroundColor:'transparent',
+	height:Ti.UI.SIZE
+},
+".title": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	color:'#a4451c',
+	top:2,
+	height:Ti.UI.SIZE
+},
+".totalval": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	top:2,
+	color:'#79b622',
+	height:Ti.UI.SIZE
+}

@@ -1,0 +1,122 @@
+".catrow": {
+	backgroundImage:'/images/categorybkg.png',
+	// backgroundColor:'transparent',
+	height:66
+},
+".left": {
+	image: '/images/foodimg.png',
+	height:47,
+	width:47,
+	top:8,
+	left:8
+},
+".right": {
+	image:'/images/arrowbrown.png',
+	height:21,
+	width:14,
+	top:10,
+	right:10
+},
+".loyaltycoupon": {
+	height:25.5,
+	width:54,
+	top:4,
+	right:80
+},
+".title": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	color:'#a4451c',
+	top:6,
+	left:60,
+	height:Ti.UI.SIZE
+},
+".subtitle": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:12,
+		fontWeight:'normal'
+	},
+	color:'#806754',
+	top:24,
+	left:62,
+	height:Ti.UI.SIZE
+},
+".expiry": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:11,
+		fontWeight:'bold'
+	},
+	color:'#a4451c',
+	top:38,
+	left:62,
+	height:Ti.UI.SIZE
+}
+
+".mycouponrowandroid": {
+	backgroundImage:'/aimages/profilebg.png',
+	height:110,
+	width:576
+	// backgroundColor:'transparent',
+	
+},
+".leftandroid": {
+	image: '/aimages/item1.png',
+	height:95,
+	width:95,
+	top:10,
+	left:8
+},
+".rightandroid": {
+	image:'/aimages/arrow1.png',
+	height:33,
+	width:14,
+	top:37,
+	right:10
+},
+".loyaltycouponandroid": {
+	height:38,
+	width:80,
+	top:10,
+	right:110
+},
+".titleandroid": {
+	font:{
+		 fontFamily: 'Arial',
+		fontSize:25,
+		fontWeight:'bold'
+	},
+	color:'#A4451C',
+	top:10,
+	left:108,
+	height:Ti.UI.SIZE
+},
+".subtitleandroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:21.5,
+		fontWeight:'normal'
+	},
+	color:'#806754',
+	top:42,
+	left:110,
+	height:Ti.UI.SIZE
+},
+".expiryandroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:18.5,
+		fontWeight:'bold'
+	},
+	color:'#806754',
+	top:75,
+	left:110,
+	height:Ti.UI.SIZE
+}
+
+
+

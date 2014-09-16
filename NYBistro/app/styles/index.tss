@@ -1,0 +1,22 @@
+".container": {
+	backgroundColor:"white"
+},
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+},
+"Button": {
+	 width:"66",
+	 height:"57",
+	 //style:Titanium.UI.iPhone.SystemButtonStyle.PLAIN
+},
+".containerandroid": {
+	 backgroundColor:"white"
+	
+},
+".buttonandroid": {
+	 width:"80",
+	 height:"70"
+	
+}

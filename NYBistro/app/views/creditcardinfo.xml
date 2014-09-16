@@ -1,0 +1,108 @@
+<Alloy>
+	<!--I phone UI-->
+	<Window class="container" id="creditCardWnd" platform="ios">
+		<ScrollView height="100%" showHorizontalScrollIndicator="false" showVerticalScrollIndicator="true">
+			<View id="containerView" backgroundColor="#ffffff" layout="vertical" height="Ti.UI.SIZE">
+				<Label class="textformat" id="lblFirstName" text="First Name:" />
+				<TextField class="textfield" id="txtfirstname" _tag="0" />
+				
+				<Label class="textformat" id="lblLastName" text="Last Name:" />
+				<TextField class="textfield" id="txtlasttname" _tag="1" />
+				
+				<Label class="textformat" id="lblcardtype" text="Card Type:" />
+				<TabbedBar id="delOptionsBar" top="8" left="8" height="30" width="300" style="Titanium.UI.iPhone.SystemButtonStyle.PLAIN" index="0" >
+					<Labels>
+						<Label>Visa</Label>
+						<Label>Master</Label>
+						<Label>Amex</Label>
+					</Labels>
+				</TabbedBar>
+				
+				<Label class="textformat" id="lblccnumber" text="Card Number:" />
+				<TextField class="textfield" id="txtcardnumber" _tag="2" />
+				
+				<View id="expDateView" top="8" height="Ti.UI.SIZE" layout="horizontal">
+					<Label class="textformat" id="lblexpiry" text="Expiry Date:" />
+					<Button id="btnShowExpDate" left="180" width="21" height="14" backgroundImage="/images/downarraow.png" />
+				</View>
+				<View id="pickerView" top="8" height="0.1" width="300" borderWidth="1" borderRadius="5" >
+					<Picker id="pickerExpDate" type="Ti.UI.PICKER_TYPE_DATE" selectionIndicator="true" />
+				</View>
+				
+				<Label class="textformat" id="lblcvv" text="CVV:" />
+				<TextField class="textfield" id="txtcvv" width="100" _tag="1" />
+				
+				<Label class="textformat" id="lblbillingaddr" text="Billing Address:" />
+				<TextField class="textfield" id="txtbillingaddr" _tag="1" />
+				
+				<Label class="textformat" id="lblcity" text="City:" />
+				<TextField class="textfield" id="txtcity" _tag="1" />
+				
+				<Label class="textformat" id="lblstate" text="State:" />
+				
+				<Label class="textformat" id="lblzip" text="Zip Code:" />
+				<TextField class="textfield" id="txtzip" _tag="1" />
+				
+				<View id="saveccInfo" top="8" left="8" height="Ti.UI.SIZE" layout="horizontal">
+					<Button id="btnChkBox" backgroundImage="/images/squarechkboxbkg.png" width="19.5" height="18.5" />
+					<Label class="textformat" top="0" left="10" id="lblsaveccinfo" text="Save For Future Use" />
+				</View>
+				
+				<Button id="btnSubmit" backgroundImage="/images/btnsubmitbkg.png" top="10" width="103" height="36" />
+			</View>
+		</ScrollView>
+	</Window>
+	
+	<!--Android UI-->
+	<Window class="containerdroid" id="creditCardWnd" statusBarHidden="false" navBarHidden="false" platform="android">
+		<ScrollView height="100%" showHorizontalScrollIndicator="false" showVerticalScrollIndicator="true">
+			<View id="containerView" backgroundColor="#ffffff" layout="vertical" height="Ti.UI.SIZE">
+				<Label class="textformatdroid" id="lblFirstName" text="First Name:" />
+				<TextField class="textfieldroid" id="txtfirstname" color="black" />
+				
+				<Label class="textformatdroid" id="lblLastName" text="Last Name:" />
+				<TextField class="textfieldroid" id="txtlasttname" color="black" />
+				
+				<Label class="textformatdroid" id="lblcardtype" text="Card Type:" />
+				<View id="creditOptions" top="5" width="453" height="50" layout="horizontal"  borderRadius="10" borderColor="blue" borderWidth="1">
+					<Button id="btnVisa" class="visa"/>
+					<Button id="btnMaster" class="master"/>
+					<Button id="btnAmex" class="amex"/>
+				</View>
+				
+				<Label class="textformatdroid" id="lblccnumber" text="Card Number:" />
+				<TextField class="textfieldroid" id="txtcardnumber" color="black" />
+				
+				<View id="expDateView" top="8" height="Ti.UI.SIZE" layout="horizontal">
+					<Label class="textformatdroid" id="lblexpiry" text="Expiry Date:" />
+					<Button id="btnShowExpDate" left="180" width="21" height="14" backgroundImage="/aimages/downarraow.png" />
+				</View>
+				<View id="pickerView" top="8" height="0.1" width="300" borderWidth="1" borderRadius="5" >
+					<Picker id="pickerExpDate" type="Ti.UI.PICKER_TYPE_DATE" selectionIndicator="true" />
+				</View>
+				
+				<Label class="textformatdroid" id="lblcvv" text="CVV:" />
+				<TextField class="textfieldroid" id="txtcvv" width="100" color="black" />
+				
+				<Label class="textformatdroid" id="lblbillingaddr" text="Billing Address:" />
+				<TextField class="textfieldroid" id="txtbillingaddr" color="black" />
+				
+				<Label class="textformatdroid" id="lblcity" text="City:" />
+				<TextField class="textfieldroid" id="txtcity" color="black" />
+				
+				<Label class="textformatdroid" id="lblstate" text="State:" />
+				<TextField class="textfieldroid" id="txtstate" color="black" />
+				
+				<Label class="textformatdroid" id="lblzip" text="Zip Code:" />
+				<TextField class="textfieldroid" id="txtzip" color="black" />
+				
+				<View id="saveccInfo" top="8" left="8" height="Ti.UI.SIZE" layout="horizontal">
+					<Button id="btnChkBox" backgroundImage="/aimages/squarechkboxbkg.png" width="19.5" height="18.5" />
+					<Label class="textformatdroid" top="0" left="10" id="lblsaveccinfo" text="Save For Future Use" />
+				</View>
+				
+				<Button id="btnSubmit" backgroundImage="/aimages/btnsubmitbkg.png" top="10" width="103" height="36" />
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

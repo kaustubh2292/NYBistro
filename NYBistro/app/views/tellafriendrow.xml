@@ -1,0 +1,13 @@
+<Alloy>
+	<TableViewRow class="container" platform="ios">
+		<ImageView class="iconview" id="imgViewIcon" />
+		<Label class="textformat" id="lblTitle" left="70" />
+		<Button class="checkbox" id="shareChkBox" />
+	</TableViewRow>
+	
+	<TableViewRow class="containerdroid" platform="android">
+		<ImageView class="iconviewdroid" id="imgViewIcon" />
+		<Label class="textformatdroid" id="lblTitle" left="70" />
+		<Button class="checkboxdroid" id="shareChkBox" />
+	</TableViewRow>
+</Alloy>

@@ -1,0 +1,138 @@
+".container" : {
+	backgroundColor:"white"
+},
+".subtotal": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	color:'#fe0000',
+	height:Ti.UI.SIZE
+},
+".textformat": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	color:'#a4451c',
+	textAlign:'Ti.UI.TEXT_ALIGNMENT_LEFT',
+	height:Ti.UI.SIZE
+},
+".totalval": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	color:'#79b622',
+	height:Ti.UI.SIZE
+},
+".showoptions":{
+	height : 14,
+	width : 21, 
+	backgroundImage : '/images/downarraow.png'
+}
+//androd
+".containerdroid" : {
+	backgroundColor:"white"
+},
+".subtotaldroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	color:'#fe0000',
+	height:Ti.UI.SIZE
+},
+".textformatdroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:18,
+		fontWeight:'bold'
+	},
+	color:'#a4451c',
+	//textAlign:'Ti.UI.TEXT_ALIGNMENT_LEFT',
+	height:Ti.UI.SIZE
+},
+".totalvaldroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:18,
+		fontWeight:'bold'
+	},
+	color:'#79b622',
+	height:Ti.UI.SIZE
+},
+/*".showoptionsdroid":{
+	height : 14,
+	width : 21, 
+	backgroundImage : '/aimages/downarraow.png'
+},*/
+".carryout":{
+	height : Ti.UI.SIZE,
+	width : 150,
+	left:0,
+	title:'Carry Out',
+	color:'black',
+	backgroundColor:'#fff',
+	borderColor:'blue',
+	borderWidth:1
+	
+	
+},
+".delivery":{
+	height : Ti.UI.SIZE,
+	width : 150,
+	title:'Delivery',
+	color:'black',
+	backgroundColor:'#fff',
+	borderColor:'blue',
+	borderWidth:1
+	
+},
+".eathere":{
+	height : Ti.UI.SIZE,
+	width : 150,
+	title:'Eat Here',
+	color:'black',
+	backgroundColor:'#fff'
+	
+	
+}
+".cash":{
+	height : Ti.UI.SIZE,
+	width : 150,
+	left:0,
+	title:'Cash',
+	color:'black',
+	backgroundColor:'#fff',
+	borderColor:'blue',
+	borderWidth:1
+
+	
+},
+".crditcard":{
+	height : Ti.UI.SIZE,
+	width : 150,
+	title:'Credit Card',
+	color:'black',
+	backgroundColor:'#fff',
+	borderColor:'blue',
+	borderWidth:1
+	
+},
+".paypal":{
+	height : Ti.UI.SIZE,
+	width : 150,
+	title:'Paypal',
+	color:'black',
+	backgroundColor:'#fff'
+	
+	
+	
+	
+}
+

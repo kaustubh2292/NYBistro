@@ -1,0 +1,13 @@
+<Alloy>
+	<Collection src="MenuItem"/>
+	<Window id="winCatDetails" backgroundColor="white" platform="ios">
+		<TableView id="theTable" dataCollection="MenuItem" dataTransform="transformFunction" dataFilter="filterFunction" >
+			<Require src="categorydetailsrow" />
+		</TableView>
+	</Window>
+	<Window id="winCatDetails" backgroundColor="white" platform="android" statusBarHidden="false" navBarHidden= "false" >
+		<TableView id="theTable" dataCollection="MenuItem" dataTransform="transformFunction" dataFilter="filterFunction">
+			<Require src="categorydetailsrow"/>
+		</TableView>
+	</Window>
+</Alloy>

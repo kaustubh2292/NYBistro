@@ -1,0 +1,86 @@
+".couponrow": {
+	backgroundImage:'/images/categorybkg.png',
+	backgroundColor:'transparent',
+	height:66
+},
+".left": {
+	height:46.5,
+	width:130,
+	top:8,
+	left:5
+},
+".right": {
+	height:21,
+	width:14,
+	top:20,
+	right:7
+},
+
+".title": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	color:'#a4451c',
+	top:8,
+	left:138,
+	height:Ti.UI.SIZE
+},
+".subtitle": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:12,
+		fontWeight:'normal'
+	},
+	color:'#806754',
+	top:32,
+	left:139,
+	height:Ti.UI.SIZE
+}
+
+//
+".couponrowandroid": {
+	backgroundImage:'/aimages/profilebg.png',
+	backgroundColor:'transparent',
+	height:110,
+	width:576
+	
+},
+".leftandroid": {
+	height:70,
+	width:160,
+	top:8,
+	left:5
+},
+".rightandroid": {
+	height:21,
+	width:14,
+	top:20,
+	right:7
+},
+
+".titleandroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:22,
+		fontWeight:'bold'
+	},
+	color:'#a4451c',
+	top:8,
+	left:170,
+	height:Ti.UI.SIZE,
+	width:325
+},
+".subtitleandroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:20,
+		fontWeight:'normal'
+	},
+	color:'#806754',
+	top:37,
+	left:171,
+	height:Ti.UI.SIZE
+}
+

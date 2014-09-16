@@ -1,0 +1,12 @@
+<Alloy>
+	<Window class="container" id="tellAFriendWnd" platform="ios"> 
+		<View class="wrapperview" id="containerView" >
+			<TableView class="table" id="theTable" />
+		</View>
+	</Window>
+	<Window class="containerdroid" id="tellAFriendWnd" platform="android" statusBarHidden="false" navBarHidden= "false" > 
+		<View class="wrapperviewdroid" id="containerView" backgroundColor="transparent">
+			<TableView class="tabledroid" id="theTable" backgroundColor="transparent"/>
+		</View>
+	</Window>  
+</Alloy>

@@ -1,0 +1,15 @@
+
+<Alloy>
+	 <Collection src="Category" /> 
+	<Window id="menuWin" backgroundColor="white" platform="ios">
+		<TableView id="theTable" dataCollection="Category" >
+			<Require src="categoryrow" />
+		</TableView>
+	</Window>
+	<Window id="menuWin" backgroundColor="white" platform="android" statusBarHidden="false" navBarHidden= "false">
+		<TableView id="theTable" dataCollection="Category">
+		<Require src="categoryrow"/> 
+	</TableView>
+
+	</Window>
+</Alloy>

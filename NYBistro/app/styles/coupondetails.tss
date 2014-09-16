@@ -1,0 +1,44 @@
+".container" : {
+   backgroundColor:"white"
+},
+
+".textformat": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:30,
+		fontWeight:'bold'
+	},
+	color:'#a4451c',
+	height:Ti.UI.SIZE
+},
+".shortdesc": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:12,
+		fontWeight:'normal'
+	},
+	color:'#806754',
+	height:Ti.UI.SIZE
+}
+".containerandroid" : {
+   backgroundColor:"white"
+},
+
+".textformatandroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:30,
+		fontWeight:'bold'
+	},
+	color:'#a4451c',
+	height:Ti.UI.SIZE
+},
+".shortdescandroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'normal'
+	},
+	color:'#806754',
+	height:Ti.UI.SIZE
+}

@@ -1,0 +1,12 @@
+<Alloy>
+	<TableViewRow class="container" platform="ios">
+		<ImageView class="iconview" id="imgViewIcon" />
+		<Label class="textformat" id="lblTitle" left="70" />
+		<ImageView id="rightArrowView" left="280" height="21" width="14" image="/images/arrowbrown.png" />
+	</TableViewRow>
+	<TableViewRow class="containerdroid" platform="android">
+		<ImageView class="iconviewdroid" id="imgViewIcon" />
+		<Label class="textformatdroid" id="lblTitle" left="70" />
+		<ImageView id="rightArrowView" left="380" height="33" width="16" image="/aimages/arrow2.png" />
+	</TableViewRow>
+</Alloy>

@@ -1,0 +1,6 @@
+<Alloy>
+	<TableViewRow class="appliedcouponrow" id="rowView" layout="horizontal" >
+		<Label class="title" id="primaryLabel" left="10"/>
+		<Label class="totalval" id="subtitle" left="95" />
+	</TableViewRow>
+</Alloy>

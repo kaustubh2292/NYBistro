@@ -1,0 +1,17 @@
+<Alloy>
+	<TableViewRow id="rowView" platform="ios" OptionsId="{OptionId}">
+		<View class="cell" id="containerView" layout="horizontal">
+			<Label class="textformat" id="lblOption" left="4" top="10"  text="{Name}"  width="100"/>
+			<Label class="dollarval" id="lblPrice" left="60" top="10" text="{Price}"/>
+			<Button class="checkbox" id="imgCheckBox" left="87" top="10" />
+		</View>
+	</TableViewRow>
+	
+	<TableViewRow id="rowView" platform="android" OptionsId="{OptionId}">
+		<View class="celldroid" id="containerView" layout="horizontal">
+			<Label class="textformatdroid" id="lblOption" left="4" top="10" text="{Name}"  width="120"/>
+			<Label class="dollarvaldroid" id="lblPrice" left="60" top="10" text="{Price}"/>
+			<Button class="checkboxdroid" id="imgCheckBox" left="87" top="10"/>			
+		</View>
+	</TableViewRow>
+</Alloy>

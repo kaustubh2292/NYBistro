@@ -1,0 +1,46 @@
+".container": {
+	backgroundColor:'white'  
+},
+".textformat": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	top:'8',
+	left:'9',
+	color:'#a4451c',
+	height:Ti.UI.SIZE
+},
+".textfield": {
+	top:'8',
+	left:'8',
+	width:'300',
+	height:'30',
+	backgroundColor:'#e9e7db',
+	borderRadius:'5',
+	
+}
+".containerandroid": {
+	backgroundColor:'white'  
+},
+".textformatandroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:22,
+		fontWeight:'bold'
+	},
+	top:'8',
+	left:'9',
+	color:'#a4451c',
+	height:Ti.UI.SIZE
+},
+".textfielddroid": {
+	top:'8',
+	left:'8',
+	width:'450',
+	height:'50',
+	backgroundColor:'#e9e7db',
+	borderRadius:'5'
+	
+}

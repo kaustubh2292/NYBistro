@@ -1,0 +1,65 @@
+".container" : {
+  backgroundColor:"white"
+},
+".textformat": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	color:'#a4451c',
+	height:Ti.UI.SIZE
+},
+".textfield": {
+	width:'300',
+	height:'30',
+	backgroundColor:'#e9e7db',
+	borderRadius:'5',
+	returnKeyType:Ti.UI.RETURNKEY_DONE
+},
+".quantity": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:12,
+		fontWeight:'bold'
+	},
+	width: 51,
+	height: 31.5,
+	backgroundImage:'/images/qtybkg.png',
+	color:'#806754',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+".containerandroid" : {
+  backgroundColor:"white"
+},
+".textformatdroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:20,
+		fontWeight:'bold'
+	},
+	color:'#a4451c',
+	height:Ti.UI.SIZE
+},
+".textfielddroid": {
+	width:'360',
+	height:'50',
+	backgroundColor:'#e9e7db',
+	borderRadius:'5',
+	color:"black"
+	
+},
+".quantitydroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	width: 60,
+	height: 70,
+	backgroundImage:'/aimages/qtybkg.png',
+	color:'#806754',
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER
+	
+	
+}

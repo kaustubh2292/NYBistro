@@ -1,0 +1,56 @@
+".container": {
+	backgroundColor:'white'  
+},
+".textformat": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	top:'8',
+	left:'9',
+	color:'#a4451c',
+	height:Ti.UI.SIZE
+},
+".textfield": {
+	top:'8',
+	left:'8',
+	width:'300',
+	height:'30',
+	backgroundColor:'#e9e7db',
+	borderRadius:'5',
+	returnKeyType:Ti.UI.RETURNKEY_DONE
+},
+
+".containerdroid": {
+	backgroundColor:'white'  
+},
+".textformatdroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:18,
+		fontWeight:'bold'
+	},
+	top:'8',
+	left:'9',
+	color:'#a4451c',
+	height:Ti.UI.SIZE
+},
+".textfieldroid": {
+	top:'8',
+	left:'8',
+	width:'300',
+	height:'50',
+	backgroundColor:'#e9e7db',
+	borderRadius:'5',
+	//returnKeyType:Ti.UI.RETURNKEY_DONE
+},
+".totalvaldroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:18,
+		fontWeight:'bold'
+	},
+	color:'#79b622',
+	height:Ti.UI.SIZE
+}

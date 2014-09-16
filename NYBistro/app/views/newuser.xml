@@ -1,0 +1,99 @@
+<Alloy>
+	<Window class="container" id="newUserWnd" platform="ios">
+		<ScrollView height="100%" showHorizontalScrollIndicator="false" showVerticalScrollIndicator="true">
+			<View id="containerView" backgroundColor="#ffffff" top="5" height="Ti.UI.SIZE" layout="vertical" >
+				<Label class="textformat" id="lblFirstName" text="First Name:" />
+				<TextField class="textfield" id="txtfirstname" _tag="0" />
+				
+				<Label class="textformat" id="lblLastName" text="Last Name:" />
+				<TextField class="textfield" id="txtlasttname" _tag="1" />
+				
+				<Label class="textformat" id="lblEmail" text="Email Address:" />
+				<TextField class="textfield" id="txtEmailAddress" _tag="0" />
+				
+				<Label class="textformat" id="lblPassword" text="Password:" />
+				<TextField class="textfield" id="txtPassword" _tag="1" />
+				
+				<Label class="textformat" id="lblPhoneNumber" text="Phone Number:" />
+				<View id="phoneview" top="4" height="Ti.UI.SIZE" layout="horizontal">
+					<TextField class="textfield" id="txtAreaCode" width="70" height="30" />
+					<Label class="seperator" id="seperator1" left="5" text="-" />
+					
+					<TextField class="textfield" id="txtFirstThreeDigits" width="70" height="30" left="5"/>
+					<Label class="seperator" id="seperator2" left="5" text="-" />
+					
+					<TextField class="textfield" id="txtFirstThreeDigits" width="70" height="30" left="5"/>
+				</View>
+				
+				<Label class="textformat" id="lblAddress" text="Address:" />
+				<TextField class="textfield" id="txtAddress" _tag="0" />
+				
+				<Label class="textformat" id="lblCity" text="City:" />
+				<TextField class="textfield" id="txtCity" _tag="1" />
+				
+				<Label class="textformat" id="lblState" text="State:" />
+				
+				<Label class="textformat" id="lblZip" text="Zip Code:" />
+				<TextField class="textfield" id="txtZip" _tag="1" />
+				
+				<View id="termsAndConditionsView" left="8" top="10" height="Ti.UI.SIZE" backgroundColor="transparent" layout="horizontal">
+					<ImageView id="termsAndConditions" width="144" height="36.5" image="/images/termsandconditions.png" />
+					<Button id="btnChkBox" left="40" width="19.5" height="18.5" backgroundImage="/images/squarechkboxbkg.png" />
+					<Label class="textformat" id="lblAccept" text="Accept" />
+				</View>
+				
+				<Button id="btnSubmit" backgroundImage="/images/btnsubmitbkg.png" top="10" bottom="10" width="103" height="36" />
+				
+			</View>
+		</ScrollView>
+	</Window>
+	
+	<Window class="containerandroid" id="newUserWnd" platform platform="android" statusBarHidden="false" navBarHidden= "false">
+		<ScrollView height="100%" showHorizontalScrollIndicator="false" showVerticalScrollIndicator="true">
+			<View id="containerView" backgroundColor="#ffffff" top="5" height="Ti.UI.SIZE" layout="vertical" >
+				<Label class="textformatandroid" id="lblFirstName" text="First Name:" />
+				<TextField class="textfielddroid" id="txtfirstname" _tag="0" />
+				
+				<Label class="textformatandroid" id="lblLastName" text="Last Name:" />
+				<TextField class="textfielddroid" id="txtlasttname" _tag="1" />
+				
+				<Label class="textformatandroid" id="lblEmail" text="Email Address:" />
+				<TextField class="textfielddroid" id="txtEmailAddress" _tag="0" />
+				
+				<Label class="textformatandroid" id="lblPassword" text="Password:" />
+				<TextField class="textfielddroid" id="txtPassword" _tag="1" />
+				
+				<Label class="textformatandroid" id="lblPhoneNumber" text="Phone Number:" />
+				<View id="phoneview" top="4" height="Ti.UI.SIZE" layout="horizontal">
+					<TextField class="textfielddroid" id="txtAreaCode" width="90" height="50" />
+					<Label class="seperatordroid" id="seperator1" left="5" text="-" />
+					
+					<TextField class="textfielddroid" id="txtFirstThreeDigits" width="90" height="50" left="5"/>
+					<Label class="seperatordroid" id="seperator2" left="5" text="-" />
+					
+					<TextField class="textfielddroid" id="txtFirstThreeDigits" width="90" height="50" left="5"/>
+				</View>
+				
+				<Label class="textformatandroid" id="lblAddress" text="Address:" />
+				<TextField class="textfielddroid" id="txtAddress" _tag="0" />
+				
+				<Label class="textformatandroid" id="lblCity" text="City:" />
+				<TextField class="textfielddroid" id="txtCity" _tag="1" />
+				
+				<Label class="textformatandroid" id="lblState" text="State:" />
+				
+				<Label class="textformatandroid" id="lblZip" text="Zip Code:" />
+				<TextField class="textfielddroid" id="txtZip" _tag="1" />
+				
+				<View id="termsAndConditionsView" left="8" top="10" height="Ti.UI.SIZE" backgroundColor="transparent" layout="horizontal">
+					<ImageView id="termsAndConditions" width="160" height="45"  top="8" image="/aimages/termsandconditions.png" />
+					<Button id="btnChkBox" left="40" width="21.5" height="20.5"  top="15" backgroundImage="/aimages/squarechkboxbkg.png" />
+					<Label class="textformatandroid" id="lblAccept" text="Accept" />
+				</View>
+				
+				<Button id="btnSubmit" backgroundImage="/aimages/btnsubmitbkg.png" top="10" bottom="10" width="120" height="50" />
+				
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

@@ -1,0 +1,32 @@
+<Alloy>
+	<NavigationWindow id="homeWin" platform="ios">
+		<Window class="container" barImage="/images/navbarbkg.png" backgroundImage="/images/homebg.png"  >
+			<!-- first row -->
+			<Button id="btnHome" backgroundImage="/images/homebtn.png" left="4%" top="70%" onClick="doClick">
+			<Button id="btnMenu" backgroundImage="/images/Menu.png" left="28%" top="70%" onClick="menuClicked" />
+			<Button id="btnMap" backgroundImage="/images/mapbtn.png" left="52%" top="70%" onClick="mapClicked" />
+			<Button id="btnCart" backgroundImage="/images/cartbtn.png" left="76%" top="70%" onClick="cartClicked" />
+			
+			<!-- second row -->
+			<Button id="btnAddUser" backgroundImage="/images/adduserbtn.png" left="4%" top="85%" onClick="addUserClicked" />
+			<Button id="btnReservation" backgroundImage="/images/reservationbtn.png" left="28%" top="85%" onClick="reservationClicked" />
+			<Button id="btnCoupons" backgroundImage="/images/couponsbtn.png" left="52%" top="85%" onClick="couponsClicked" />
+			<Button id="btnMore" backgroundImage="/images/morebtn.png" left="76%" top="85%" onClick="moreClicked" />
+			
+		</Window>
+	</NavigationWindow>
+	
+	<Window id="homeWin" class="containerandroid" backgroundImage="/images/homebg.png" platform="android" exitOnClose="true" statusBarHidden="false" navBarHidden= "false">
+				<!-- first row -->
+			<Button id="btnHome" class="buttonandroid" backgroundImage="/aimages/home.png" left="4%" top="70%" onClick="doClick">
+			<Button id="btnMenu"  class="buttonandroid" backgroundImage="/aimages/menu.png" left="28%" top="70%" onClick="menuClicked" />
+			<Button id="btnMap" class="buttonandroid"  backgroundImage="/aimages/map.png" left="52%" top="70%" onClick="mapClicked" />
+			<Button id="btnCart" class="buttonandroid" backgroundImage="/aimages/cart.png" left="76%" top="70%" onClick="cartClicked" />
+			
+			<!-- second row -->
+			<Button id="btnAddUser" class="buttonandroid" backgroundImage="/aimages/adduser.png" left="4%" top="85%" onClick="addUserClicked" />
+			<Button id="btnReservation" class="buttonandroid" backgroundImage="/aimages/reservation.png" left="28%" top="85%" onClick="reservationClicked" />
+			<Button id="btnCoupons" class="buttonandroid" backgroundImage="/aimages/coupons.png" left="52%" top="85%" onClick="couponsClicked" />
+			<Button id="btnMore" class="buttonandroid" backgroundImage="/aimages/more.png" left="76%" top="85%" onClick="moreClicked" />
+	</Window>
+</Alloy>

@@ -1,0 +1,37 @@
+<Alloy>
+	<TableViewRow id="rowView" platform="ios">
+		<View class="cartrow" id="rowContainer">
+			<ImageView class="left" id="leftImage"/>
+			<Label class="textformat" id="primaryLabel" text="{ItemName}"/>
+			<Label class="subtextformat" id="price" top="32" text="{ItemPrice}"/>
+			<Label class="subtextformat" id="quantity" top="50" text="{Quantity}"/>
+			<Button class="updatebtn" id="btnChangeQty" top="70" left="110" width="60" height="26" title="Update" />
+			<Button id="btnDelete" top="30" left="240" height="30" width="33" backgroundImage="/images/btndelete.png" />
+		</View>
+		<!--<OptionDialog id="qtyOptions" title="Select Qunatity">
+			<Options>
+				<Option>2</Option>
+				<Option>3</Option>
+				<Option>4</Option>
+			</Options>
+	</OptionDialog>-->
+	</TableViewRow>
+	<TableViewRow id="rowView" platform="android">
+		<View class="cartrowdroid" id="rowContainer">
+			<ImageView class="leftdroid" id="leftImage"/>
+			<Label class="textformatdroid" id="primaryLabel" text="{ItemName}"/>
+			<Label class="subtextformatdroid" id="price" top="32" text="{ItemPrice}"/>
+			<Label class="subtextformatdroid" id="quantity" top="55" />
+			<Button class="updatebtndroid" id="btnChangeQty" top="80" left="110" width="60" height="35" title="Update" />
+			<Button id="btnDelete" top="30" left="380" height="30" width="35" backgroundImage="/aimages/btndelete.png" />
+		</View>
+		<!--<OptionDialog id="qtyOptions" title="Select Qunatity" platform="android">
+			<Options>
+				<Option>2</Option>
+				<Option>3</Option>
+				<Option>4</Option>
+			</Options>
+			</OptionDialog>-->
+	</TableViewRow>
+
+</Alloy>

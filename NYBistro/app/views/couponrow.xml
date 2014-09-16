@@ -1,0 +1,14 @@
+<Alloy>
+	<TableViewRow class="couponrow" id="rowView" platform="ios">
+		<ImageView class="left" id="leftImage" image="{CouponImage}"/>
+		<Label class="title" id="primaryLabel" text="{CouponName}"/>
+		<Label class="subtitle" id="subtitle" text="{CouponDesc}"/>
+		<ImageView class="right" id="rightImage" image="{ArrowImage}"/>
+	</TableViewRow>
+	<TableViewRow class="couponrowandroid" id="rowView" platform="android">
+		<ImageView class="leftandroid" id="leftImage" image="{CouponImage}"/>
+		<Label class="titleandroid" id="primaryLabel" text="{CouponName}"/>
+		<Label class="subtitleandroid" id="subtitle" text="{CouponDesc}"/>
+		<ImageView class="rightandroid" id="rightImage" image="{ArrowImage}"/>
+	</TableViewRow>
+</Alloy>

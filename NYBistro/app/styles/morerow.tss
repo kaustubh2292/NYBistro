@@ -1,0 +1,41 @@
+".container": {
+	backgroundColor:"#f9f7ec",
+	height:Ti.UI.SIZE	  
+},
+".iconview": {
+	left:"10",
+	top:"10",
+	bottom:"10",
+	height:"27",
+	width:"28.5"
+},
+".textformat": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	color:'#a4451c',
+	height:Ti.UI.SIZE
+}
+
+".containerdroid": {
+	backgroundColor:"#f9f7ec",
+	height:	Ti.UI.SIZE
+},
+".iconviewdroid": {
+	left:"10",
+	top:"10",
+	bottom:"10",
+	height:"37",
+	width:"38.5"
+},
+".textformatdroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:22,
+		fontWeight:'bold'
+	},
+	color:'#a4451c',
+	height:Ti.UI.SIZE
+}

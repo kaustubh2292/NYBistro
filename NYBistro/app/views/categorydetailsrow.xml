@@ -1,0 +1,16 @@
+<Alloy>
+	<TableViewRow class="catdetailsrow" id="rowView" platform="ios" menuitemid="{MenuItemId}" >
+		<ImageView class="left" id="leftImage"/>
+		<Label class="title" id="primaryLabel" text="{Name}"/>
+		<Label class="subtitle" id="subtitle" text="{Description}"/>
+		<Button class="price" id="btnPrice" text="{Price}"/>
+		<ImageView class="right" id="rightImage"/>
+	</TableViewRow>
+	<TableViewRow class="catrowdetailandroid" id="rowView" platform="android" menuitemid="{MenuItemId}">
+		<ImageView class="leftandroid" id="leftImage"/>
+		<Label class="titleandroid" id="primaryLabel" text="{Name}" />
+		<Label class="subtitleandroid" id="subtitle" text="{Description}"/>
+		<Button class="priceandroid" id="btnPrice" title="{Price}" />
+		<ImageView class="rightandroid" id="rightImage"/>
+	</TableViewRow>
+</Alloy>

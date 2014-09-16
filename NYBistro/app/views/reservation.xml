@@ -1,0 +1,91 @@
+<Alloy>
+	<Window id="reservationWnd" class="container" platform="ios">
+		<View id="containerView" backgroundColor="#ffffff" height="Ti.UI.SIZE" top="0" width="100%" layout="vertical" >
+			<View id="foodImageView" height="Ti.UI.SIZE" top="5">
+				<ImageView id="foodBkg" image="/images/detailfoodimgbkg.png" top="0" width="352" height="234" />
+				<ImageView id="imgFood" image="/images/detailsfoodimage.png" top="5" width="304" height="220" />
+			</View>
+			<View id="dateView" top="15" height="Ti.UI.SIZE" layout="horizontal">
+				<Label class="textformat" id="lblDate" left="40" text="Date:"/>
+				<TextField class="textfield" id="txtDate" width="150" left="10"/>
+				<Button id="btnUpdateDate" height="28.5" width="29" backgroundImage ="/images/btndownarrowbkg.png" />
+			</View>
+			<View id="timeView" top="15" height="Ti.UI.SIZE" layout="horizontal">
+				<Label class="textformat" id="lblTime" left="40" text="Time:"/>
+				<TextField class="textfield" id="txtTime" width="150" left="10"/>
+				<Button id="btnUpdateTime" height="28.5" width="29" backgroundImage ="/images/btndownarrowbkg.png" />
+			</View>
+			<View id="numberOfPeopleView" top="15" height="Ti.UI.SIZE" layout="horizontal">
+				<Label class="textformat" id="lblNumberOfPeople" text="Number Of People:" left="40" />
+				<Label class ="quantity" id="lblQtyNum" left="15" text="1" />
+				<View id="btnView" layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.SIZE">
+					<Button id="btnAdd" backgroundImage="/images/qtyadditionbkg.png" height="16" width="29" />
+					<Button id="btnSub" backgroundImage="/images/qtysubtractionbkg.png" height="16" width="29" />
+				</View>
+			</View>
+			
+			<Button id="btnReserve" top="15" height="36.5" width="103" backgroundImage="/images/btnreservebkg.png" />
+		</View>
+		
+	<!-- Picker control for showing date -->
+		<View id="datePickerView" height="251" width="96%" bottom="-251" >
+			<Picker id="datePicker" selectionIndicator="true" type="Ti.UI.PICKER_TYPE_DATE" />
+			<Toolbar id="toolbar" borderBottom="false" borderTop="true" bottom="0" translucent="true">
+				<Items>
+					<Button id="btnCancel" title="Cancel" style="Ti.UI.iPhone.SystemButtonStyle.BORDERED" />
+					<FlexSpace/>
+					<Button id="btnDone" title="Done" style="Ti.UI.iPhone.SystemButtonStyle.DONE" />
+				</Items>
+			</Toolbar>
+		</View>
+		
+		<!-- Picker control for picking time of the day -->
+		<View id="timePickerView" height="251" width="96%" bottom="-251" >
+			<Picker id="timePicker" selectionIndicator="true" type="Ti.UI.PICKER_TYPE_TIME" />
+			<Toolbar id="toolbarTime" borderBottom="false" borderTop="true" bottom="0" translucent="true">
+				<Items>
+					<Button id="btnCancelTime" title="Cancel" style="Ti.UI.iPhone.SystemButtonStyle.BORDERED" />
+					<FlexSpace/>
+					<Button id="btnDoneTime" title="Done" style="Ti.UI.iPhone.SystemButtonStyle.DONE" />
+				</Items>
+			</Toolbar>
+		</View>
+	</Window>
+	<!--android-->
+	<Window id="reservationWnd" class="containerandroid" platform="android" statusBarHidden="false" navBarHidden= "false">
+		<View id="containerView" backgroundColor="#ffffff" height="Ti.UI.SIZE" top="0" width="100%" layout="vertical" >
+			<View id="foodImageView" height="Ti.UI.SIZE" top="5">
+				<ImageView id="foodBkg" image="/aimages/detailfoodimgbkg.png" top="0" width="580" height="370" />
+				<ImageView id="imgFood" image="/aimages/detailsfoodimage.png" top="5" width="470" height="340" />
+			</View>
+			<View id="dateView" top="15" height="Ti.UI.SIZE" layout="horizontal">
+				<Label class="textformatdroid" id="lblDate" left="40" text="Date:"/>
+				<TextField class="textfielddroid" id="txtDate" width="200" left="10"/>
+				<Button id="btnUpdateDate" height="48.5" width="29" backgroundImage ="/aimages/btndownarrowbkg.png"/>
+			</View>
+			<View id="timeView" top="15" height="Ti.UI.SIZE" layout="horizontal">
+				<Label class="textformatdroid" id="lblTime" left="40" text="Time:"/>
+				<TextField class="textfielddroid" id="txtTime" width="200" left="10"/>
+				<Button id="btnUpdateTime" height="48.5" width="29" backgroundImage ="/aimages/btndownarrowbkg.png"/>
+			</View>
+			<View id="numberOfPeopleView" top="15" height="Ti.UI.SIZE" layout="horizontal">
+				<Label class="textformatdroid" id="lblNumberOfPeople" text="Number Of People:" left="40" />
+				<Label class ="quantitydroid" id="lblQtyNum" left="15" text="1"  />
+				<View id="btnView" layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.SIZE">
+					<Button id="btnAdd" backgroundImage="/aimages/qtyadditionbkg.png" height="35" width="30" />
+					<Button id="btnSub" backgroundImage="/aimages/qtysubtractionbkg.png" height="35" width="30" />
+				</View>
+			</View>
+			
+			<Button id="btnReserve" top="15" height="50" width="120" backgroundImage="/aimages/btnreservebkg.png" />
+		</View>
+		
+		
+		<View id="datePickerView" height="251" width="96%" bottom="-251" >
+				<Picker id="datePicker"/>
+		</View>
+		
+	</Window>
+	
+	
+</Alloy>

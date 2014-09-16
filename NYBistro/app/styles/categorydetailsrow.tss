@@ -1,0 +1,112 @@
+//ios style
+".catrow":{
+	backgroundImage:'/images/categorybkg.png',
+	backgroundColor:'transparent',
+	height:110,
+	width:576
+},
+".left": {
+	image: '/images/foodimg.png',
+	height:47,
+	width:47,
+	top:8,
+	left:8
+},
+".right": {
+	image:'/images/arrowbrown.png',
+	height:21,
+	width:14,
+	top:20,
+	right:10
+},
+".price": {
+	backgroundImage:'/images/menuprice.png',
+	height:30,
+	width:73,
+	top:15,
+	right:40
+	
+},
+".title": {
+	font:{
+		 fontFamily: 'Arial',
+		fontSize:25,
+		fontWeight:'bold'
+	},
+	color:'#A4451C',
+	top:8,
+	left:60,
+	height:Ti.UI.SIZE
+},
+".subtitle": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:22,
+		fontWeight:'normal'
+	},
+	color:'#806754',
+	top:32,
+	left:62,
+	height:Ti.UI.SIZE
+}
+
+//android style
+
+
+".catrowdetailandroid": {
+	backgroundImage:'/aimages/profilebg.png',
+	// selectedBackgroundImage:'/images/selcategorybkg.png',
+	backgroundColor:'transparent',
+	height:110,
+	width:576
+},
+".leftandroid": {
+	image: '/aimages/item1.png',
+	height:95,
+	width:95,
+	top:8,
+	left:8
+},
+".rightandroid": {
+	image:'/aimages/arrow2.png',
+	height:33,
+	width:14,
+	top:37,
+	right:10
+},
+".priceandroid": {
+	backgroundImage:'/aimages/pricebutton.png',
+	height:46,
+	width:100,
+	top:26,
+	right:35,
+	font:{
+		// fontFamily: 'Aerial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	color:'white'
+},
+".titleandroid": {
+	font:{
+		 fontFamily: 'Arial',
+		fontSize:20,
+		fontWeight:'bold'
+	},
+	color:'#A4451C',
+	top:8,
+	left:108,
+	height:Ti.UI.SIZE
+},
+".subtitleandroid":{
+	font:{
+		fontFamily: 'Arial',
+		fontSize:18,
+		fontWeight:'normal'
+	},
+	color:'#806754',
+	top:42,
+	left:110,
+	height:Ti.UI.SIZE,
+	width:200
+}

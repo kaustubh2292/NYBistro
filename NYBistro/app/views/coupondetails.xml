@@ -1,0 +1,28 @@
+<Alloy>
+	<Window class="container" id='winCouponDetails' platform="ios">
+		<View id="containerView" backgroundColor="white" height="100%" width="100%" >
+			<ImageView id="foodBkg" image="/images/detailfoodimgbkg.png" width="352" height="234" top="0" />
+			<ImageView id="imgFood" image="/images/detailsfoodimage.png" width="304" height="220" top="5" />
+			<Label class="textformat" id="lblFoodName" text="BUY 1 GET 1 FREE" top="235" left="20" />
+			<View backgroundImage="/images/coupontextbkg.png" height="100" width="305" top="270" left="7" borderRadius="5">
+				<Label class="shortdesc" id="lblCoupondesc" />
+			</View>
+			<Button id="btnAction" width="174" height="32" backgroundImage="images/redeemcoupon.png" top="375" left="75" />
+		</View>
+	</Window>
+	<!--Android-->
+	<Window class="containerandroid" id='winCouponDetails' platform="android" statusBarHidden="false" navBarHidden="false">
+		<View id="containerView" height="100%" width="100%">
+			<ImageView id="foodBkg" image="/aimages/detailfoodimgbkg.png" width="550" height="370" top="0" />
+			<ImageView id="imgFood" image="/aimages/detailsfoodimage.png" width="470" height="340" top="10"/>
+			
+			<Label class="textformatandroid" id="lblFoodName"  top="371" left="40" />
+			
+			<View id="couponTxtBkg" backgroundImage="/aimages/profilebg.png" height="150" width="470" top="430" borderRadius="5">
+							<Label class="shortdescandroid" id="lblCoupondesc" />
+						</View>
+			
+		<Button id="btnAction" width="200" height="50" backgroundImage="/aimages/redeembtnbkg.png" top="580" left="140" bottom="2"/>
+		</View>
+	</Window>
+</Alloy>

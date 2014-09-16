@@ -1,0 +1,14 @@
+<Alloy>
+	<TableViewRow class="catrow" id="rowView" platform="ios" subcatid="{SubCatId}">
+		<ImageView class="left" id="leftImage"/>
+		<Label class="title" id="primaryLabel" text="{Name}" />
+		<Label class="subtitle" id="subtitle"/>
+		<ImageView class="right" id="rightImage"/>
+	</TableViewRow>
+	<TableViewRow class="catrow" id="rowView" platform="android" subcatid="{SubCatId}" >
+		<ImageView class="left" id="leftImage"/>
+		<Label class="title" id="primaryLabel" text="{Name}" />
+		<Label class="subtitle" id="subtitle"/>
+		<ImageView class="right" id="rightImage"/>
+	</TableViewRow>
+</Alloy>

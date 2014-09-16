@@ -1,0 +1,43 @@
+<Alloy>
+	<Collection src="ShoppingCart" />
+	<Window id="cartwnd" class="container" platform="ios">
+		<View id="containerView" layout="vertical">
+			<TableView id="theTable" height="80%" allowsSelection="false"  dataCollection="ShoppingCart"/>
+			<View id="subtotalView" top="5" backgroundImage="/images/subtotalbkg.png" width="300" height="30" layout="horizontal">
+				<Label class ="subtotal" id="lblSubTotalText" top="6" left="4" text="Sub Total:" textAlign="left" />
+				<Label class="totalval" id="lblSubtotalVal" top="6" left="150"  />
+			</View>
+			<Button id="btnCheckout" backgroundImage='/images/btncheckoutbkg.png' top="7" bottom="2" width="128" height="32" />
+			<OptionDialog id="qtyOptions" title="Select Qunatity">
+            <Options>
+                <Option>1</Option>
+                <Option>2</Option>
+                <Option>3</Option>
+                <Option>4</Option>
+            </Options>
+      	 	</OptionDialog>
+		</View>
+	</Window>
+	
+	
+	<Window id="cartwnd" class="containerandroid" statusBarHidden="false" navBarHidden= "false" platform="android">
+		<View id="containerView" layout="vertical">
+			<TableView id="theTable" height="80%" allowsSelection="false" dataCollection="ShoppingCart">
+				<Require src="shoppingcartrow" />
+			</TableView>
+			<View id="subtotalView" top="5" backgroundImage="/aimages/subtotalbkg.png" width="450" height="50" layout="horizontal">
+				<Label class ="subtotaldroid" id="lblSubTotalText" top="12" left="4" text="Sub Total:" textAlign="left" />
+				<Label class="totalvaldroid" id="lblSubtotalVal" top="12" left="220"/>
+			</View>
+			<Button id="btnCheckout" backgroundImage='/aimages/btncheckoutbkg.png' top="10" bottom="2" width="158" height="42" />
+			<OptionDialog id="qtyOptions" title="Select Qunatity" platform="android">
+            <Options>
+                <Option>1</Option>
+                <Option>2</Option>
+                <Option>3</Option>
+                <Option>4</Option>
+            </Options>
+      		</OptionDialog>
+		</View>
+	</Window>
+</Alloy>

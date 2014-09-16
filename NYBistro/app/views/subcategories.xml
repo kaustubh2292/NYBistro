@@ -1,0 +1,13 @@
+<Alloy>
+	<Collection src="SubCategory"/>
+	<Window id="subCatWin" backgroundColor="white" platform="ios">
+		<TableView id="theTable" dataCollection="SubCategory" dataFilter="filterFunction">
+			<Require src="subcategoryrow" />
+		</TableView>
+	</Window>
+	<Window id="subCatWin" backgroundColor="white" platform="android" statusBarHidden="false" navBarHidden= "false" >
+		<TableView id="theTable" dataCollection="SubCategory" dataFilter="filterFunction" >
+			<Require src="subcategoryrow" />
+		</TableView>
+	</Window>
+</Alloy>

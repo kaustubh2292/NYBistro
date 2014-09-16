@@ -1,0 +1,49 @@
+".container": {
+	backgroundColor:"#f9f7ec",
+	height:Ti.UI.SIZE	  
+},
+".iconview": {
+	left:"10",
+	top:"10",
+	bottom:"10"
+},
+".textformat": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	color:'#a4451c',
+	height:Ti.UI.SIZE
+},
+
+".checkbox":{
+	backgroundImage:'/images/chkboxunchecked.png',
+	width:'20',
+	height:'20',
+	left:'260'
+}
+".containerdroid": {
+	backgroundColor:"#f9f7ec",
+	height:Ti.UI.SIZE	  
+},
+".iconviewdroid": {
+	left:"10",
+	top:"10",
+	bottom:"10"
+},
+".textformatdroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:20,
+		fontWeight:'bold'
+	},
+	color:'#a4451c',
+	height:Ti.UI.SIZE
+},
+".checkboxdroid":{
+	backgroundImage:'/aimages/chkboxunchecked.png',
+	width:'25',
+	height:'25',
+	left:'360'
+}

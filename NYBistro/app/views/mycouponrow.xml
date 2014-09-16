@@ -1,0 +1,18 @@
+<Alloy>
+	<TableViewRow class="mycouponrow" id="rowView" platform="ios">
+		<ImageView class="left" id="leftImage"/>
+		<Label class="title" id="primaryLabel" text="{CouponName}"/>
+		<Label class="subtitle" id="subtitle" text="{CouponDesc}"/>
+		<Label class="expiry" id="lblExpiry" text="{CouponExp}" />
+		<Label class="loyaltycoupon" id="lblloyaltycoupon" backgroundImage="{CouponImage}"/>
+		<ImageView class="right" id="rightImage"/>
+	</TableViewRow>
+	<TableViewRow class="mycouponrowandroid" id="rowView" platform="android" statusBarHidden="false" navBarHidden= "false">
+		<ImageView class="leftandroid" id="leftImage"/>
+		<Label class="titleandroid" id="primaryLabel" text="{CouponName}"/>
+		<Label class="subtitleandroid" id="subtitle" text="{CouponDesc}"/>
+		<Label class="expiryandroid" id="lblExpiry" text="{CouponExp}" />
+		<Label class="loyaltycouponandroid" id="lblloyaltycoupon" backgroundImage="{CouponImage}"/>
+		<ImageView class="rightandroid" id="rightImage"/>
+	</TableViewRow>
+</Alloy>

@@ -1,0 +1,80 @@
+".container": {
+	backgroundColor:'white'  
+},
+".textformat": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:15,
+		fontWeight:'bold'
+	},
+	top:'8',
+	left:'9',
+	color:'#a4451c',
+	height:Ti.UI.SIZE
+},
+".textfield": {
+	top:'8',
+	left:'8',
+	width:'300',
+	height:'30',
+	backgroundColor:'#e9e7db',
+	borderRadius:'5',
+	returnKeyType:Ti.UI.RETURNKEY_DONE
+},
+
+".containerdroid": {
+	backgroundColor:'white'  
+},
+".textformatdroid": {
+	font:{
+		fontFamily: 'Arial',
+		fontSize:18,
+		fontWeight:'bold'
+	},
+	top:'8',
+	left:'9',
+	color:'#a4451c',
+	height:Ti.UI.SIZE
+},
+".textfieldroid": {
+	top:'8',
+	left:'8',
+	width:'300',
+	height:'50',
+	backgroundColor:'#e9e7db',
+	borderRadius:'5',
+	//returnKeyType:Ti.UI.RETURNKEY_DONE
+},
+
+".visa":{
+	height : Ti.UI.SIZE,
+	width : 150,
+	left:0,
+	title:'Visa',
+	color:'black',
+	backgroundColor:'#fff',
+	borderColor:'blue',
+	borderWidth:1
+	
+	
+},
+".master":{
+	height : Ti.UI.SIZE,
+	width : 150,
+	title:'Master',
+	color:'black',
+	backgroundColor:'#fff',
+	borderColor:'blue',
+	borderWidth:1
+	
+},
+".amex":{
+	height : Ti.UI.SIZE,
+	width : 150,
+	title:'Amex',
+	color:'black',
+	backgroundColor:'#fff',
+	borderColor:'blue',
+	borderWidth:1
+	
+}

@@ -1,0 +1,11 @@
+<Alloy>
+	<Collection src="OptionalItem"/>
+	<Window id="orderWnd" class="containerdroid"  statusBarHidden="false" navBarHidden="false" platform="android">
+		<View id = "optiontablecontainer" width="95%" height="0.1%" top ="10">
+			<TableView id="optionsTable" top="5" height="95%" borderWidth="1" borderRadius="10" borderColor="black" width="95%" allowsSelection="false" dataCollection="OptionalItem">
+				<Require src="optionsrow" />
+			</TableView>
+		</View>
+		<Button id="animatebtn" top="350" bottom="2" width="180" height="60" title ="Animate" />
+	</Window>
+</Alloy>

@@ -1,0 +1,9 @@
+".containerdroid" : {
+	backgroundColor:"white"
+},
+"animatebtn" : {	
+	color:'black',
+	backgroundColor:'#fff'
+	
+	
+}

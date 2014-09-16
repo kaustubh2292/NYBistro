@@ -1,0 +1,13 @@
+<Alloy>
+	<Collection src= "CouponLocal" />
+	<Window id="myCouponsWin" backgroundColor="white" platform="ios" >
+		<TableView id="theTable" dataCollection="CouponLocal" dataTransform="transformFunction">
+			<Require src="mycouponrow" />
+		</TableView>
+	</Window>
+	<Window id="myCouponsWin" backgroundColor="white" platform="android" statusBarHidden="false" navBarHidden= "false" >
+		<TableView id="theTable" dataCollection="CouponLocal" dataTransform="transformFunction">
+			<Require src="mycouponrow" />
+		</TableView>
+	</Window>
+</Alloy>
