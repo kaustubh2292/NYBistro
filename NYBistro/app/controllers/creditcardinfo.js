@@ -1,14 +1,6 @@
 var osname = Ti.Platform.osname;
 console.log('pickerExpDate');
 
-//Set initial value to today’s date.
-var maxDate = new Date();
-$.pickerExpDate.minDate = new Date(2013, 1, 1);
-$.pickerExpDate.maxDate = maxDate;
-var chosenDate = $.pickerExpDate.value;
-$.pickerExpDate.setLocale('de');
-
-
 if (osname == 'iphone' || osname == 'ipad') {
 // Create custom back button
 var backButton = Ti.UI.createButton(
@@ -39,6 +31,13 @@ $.btnChkBox.addEventListener('click',function(e){
 	}
 });
 
+//Set initial value to today’s date.
+var maxDate = new Date();
+$.pickerExpDate.minDate = new Date(2013, 1, 1);
+$.pickerExpDate.maxDate = maxDate;
+var chosenDate = $.pickerExpDate.value;
+$.pickerExpDate.setLocale('de');
+
 var slide_in =  Titanium.UI.createAnimation({duration:100, height:'50'});
 var slide_out =  Titanium.UI.createAnimation({duration:100, height:'0.1'});
 
@@ -54,6 +53,10 @@ $.btnShowExpDate.addEventListener('click',function(e){
 	}
 });
 
+$.pickerExpDate.addEventListener('change', function(e) {
+    console.log("User selected date: " + e.value);
+    chosenDate = e.value;
+});
 }
 
 else if (osname === 'android') {
@@ -82,11 +85,6 @@ $.btnChkBox.addEventListener('click',function(e){
 	}
 });
 
-$.pickerExpDate.addEventListener('change', function(e) {
-    console.log("User selected date: " + e.value);
-    chosenDate = e.value;
-});
-
 $.btnVisa.addEventListener('click',function(e){
 	$.btnVisa.backgroundColor = "blue";
 	$.btnMaster.backgroundColor = "#fff";
@@ -104,8 +102,49 @@ $.btnAmex.addEventListener('click',function(e){
 	$.btnMaster.backgroundColor = "#fff";
 	$.btnAmex.backgroundColor = "blue";
 });
+
+var slide_in = Titanium.UI.createAnimation({
+		duration : 300,
+		bottom : 0
+	});
+	var slide_out = Titanium.UI.createAnimation({
+		duration : 300,
+		bottom : -251
+	});
+
+
+
+	//	$.datePickerView.add(picker);
+
+	$.btnShowExpDate.addEventListener('click', function(e) {
+		//$.datePickerView.animate(slide_in);
+		$.datePicker.showDatePickerDialog({
+			value : new Date(), // some date
+			callback : function(e) {
+				if (e.cancel) {
+					Ti.API.info('user canceled dialog');
+				} else {
+
+					Ti.API.info('value is: ' + e.value);
+					Ti.API.info('lets see what this object is' + JSON.stringify(e));
+					selectedDate = e.value;
+					var dateval = e.value;
+
+					$.txtDate.value = formatDate(dateval);
+				}
+			}
+		});
+
+	});
 }
 
+function formatDate(dateString) {
+	var current_date = new Date(dateString);
+	
+	var dateString = current_date.getDate() + "/" + current_date.getMonth() + "/" + current_date.getFullYear();
+
+	return dateString;
+}
 
 // // Create done button for keyboard type number pad to hide it
 // var donebutton = Ti.UI.createButton({title:'DONE', width:Ti.UI.FILL, height:Ti.UI.FILL, activefld:'{}'});

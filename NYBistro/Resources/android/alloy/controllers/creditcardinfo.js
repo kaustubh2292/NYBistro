@@ -1,4 +1,9 @@
 function Controller() {
+    function formatDate(dateString) {
+        var current_date = new Date(dateString);
+        var dateString = current_date.getMonth() + " " + current_date.getDate() + " " + current_date.getFullYear();
+        return dateString;
+    }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "creditcardinfo";
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
@@ -46,10 +51,10 @@ function Controller() {
         left: "8",
         width: "300",
         height: "50",
+        color: "black",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
-        id: "txtfirstname",
-        color: "black"
+        id: "txtfirstname"
     });
     $.__views.containerView.add($.__views.txtfirstname);
     $.__views.lblLastName = Ti.UI.createLabel({
@@ -71,10 +76,10 @@ function Controller() {
         left: "8",
         width: "300",
         height: "50",
+        color: "black",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
-        id: "txtlasttname",
-        color: "black"
+        id: "txtlasttname"
     });
     $.__views.containerView.add($.__views.txtlasttname);
     $.__views.lblcardtype = Ti.UI.createLabel({
@@ -155,10 +160,10 @@ function Controller() {
         left: "8",
         width: "300",
         height: "50",
+        color: "black",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
-        id: "txtcardnumber",
-        color: "black"
+        id: "txtcardnumber"
     });
     $.__views.containerView.add($.__views.txtcardnumber);
     $.__views.expDateView = Ti.UI.createView({
@@ -182,29 +187,25 @@ function Controller() {
         text: "Expiry Date:"
     });
     $.__views.expDateView.add($.__views.lblexpiry);
+    $.__views.txtDate = Ti.UI.createTextField({
+        top: "8",
+        left: "20",
+        width: "200",
+        height: "50",
+        color: "black",
+        backgroundColor: "#e9e7db",
+        borderRadius: "5",
+        id: "txtDate"
+    });
+    $.__views.expDateView.add($.__views.txtDate);
     $.__views.btnShowExpDate = Ti.UI.createButton({
         id: "btnShowExpDate",
-        left: "180",
-        width: "21",
-        height: "14",
-        backgroundImage: "/aimages/downarraow.png"
+        top: "8",
+        height: "45",
+        width: "30",
+        backgroundImage: "/aimages/btndownarrowbkg.png"
     });
     $.__views.expDateView.add($.__views.btnShowExpDate);
-    $.__views.pickerView = Ti.UI.createView({
-        id: "pickerView",
-        top: "8",
-        height: "0.1",
-        width: "300",
-        borderWidth: "1",
-        borderRadius: "5"
-    });
-    $.__views.containerView.add($.__views.pickerView);
-    $.__views.pickerExpDate = Ti.UI.createPicker({
-        id: "pickerExpDate",
-        type: Ti.UI.PICKER_TYPE_DATE,
-        selectionIndicator: "true"
-    });
-    $.__views.pickerView.add($.__views.pickerExpDate);
     $.__views.lblcvv = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
@@ -224,10 +225,10 @@ function Controller() {
         left: "8",
         width: "100",
         height: "50",
+        color: "black",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
-        id: "txtcvv",
-        color: "black"
+        id: "txtcvv"
     });
     $.__views.containerView.add($.__views.txtcvv);
     $.__views.lblbillingaddr = Ti.UI.createLabel({
@@ -249,10 +250,10 @@ function Controller() {
         left: "8",
         width: "300",
         height: "50",
+        color: "black",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
-        id: "txtbillingaddr",
-        color: "black"
+        id: "txtbillingaddr"
     });
     $.__views.containerView.add($.__views.txtbillingaddr);
     $.__views.lblcity = Ti.UI.createLabel({
@@ -274,10 +275,10 @@ function Controller() {
         left: "8",
         width: "300",
         height: "50",
+        color: "black",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
-        id: "txtcity",
-        color: "black"
+        id: "txtcity"
     });
     $.__views.containerView.add($.__views.txtcity);
     $.__views.lblstate = Ti.UI.createLabel({
@@ -299,10 +300,10 @@ function Controller() {
         left: "8",
         width: "300",
         height: "50",
+        color: "black",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
-        id: "txtstate",
-        color: "black"
+        id: "txtstate"
     });
     $.__views.containerView.add($.__views.txtstate);
     $.__views.lblzip = Ti.UI.createLabel({
@@ -324,10 +325,10 @@ function Controller() {
         left: "8",
         width: "300",
         height: "50",
+        color: "black",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
-        id: "txtzip",
-        color: "black"
+        id: "txtzip"
     });
     $.__views.containerView.add($.__views.txtzip);
     $.__views.saveccInfo = Ti.UI.createView({
@@ -367,15 +368,21 @@ function Controller() {
         height: "36"
     });
     $.__views.containerView.add($.__views.btnSubmit);
+    $.__views.datePickerView = Ti.UI.createView({
+        id: "datePickerView",
+        height: "251",
+        width: "80%",
+        bottom: "-251"
+    });
+    $.__views.creditCardWnd.add($.__views.datePickerView);
+    $.__views.datePicker = Ti.UI.createPicker({
+        id: "datePicker"
+    });
+    $.__views.datePickerView.add($.__views.datePicker);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var osname = "android";
     console.log("pickerExpDate");
-    var maxDate = new Date();
-    $.pickerExpDate.minDate = new Date(2013, 1, 1);
-    $.pickerExpDate.maxDate = maxDate;
-    var chosenDate = $.pickerExpDate.value;
-    $.pickerExpDate.setLocale("de");
     if ("iphone" == osname || "ipad" == osname) {
         var backButton = Ti.UI.createButton({
             height: 26,
@@ -391,6 +398,11 @@ function Controller() {
         $.btnChkBox.addEventListener("click", function(e) {
             e.source.backgroundImage = "/images/squarechkboxbkg.png" == e.source.backgroundImage ? "/images/squarecheckedbkg.png" : "/images/squarechkboxbkg.png";
         });
+        var maxDate = new Date();
+        $.pickerExpDate.minDate = new Date(2013, 1, 1);
+        $.pickerExpDate.maxDate = maxDate;
+        var chosenDate = $.pickerExpDate.value;
+        $.pickerExpDate.setLocale("de");
         var slide_in = Titanium.UI.createAnimation({
             duration: 100,
             height: "50"
@@ -408,6 +420,10 @@ function Controller() {
                 $.pickerView.animate(slide_out);
             }
         });
+        $.pickerExpDate.addEventListener("change", function(e) {
+            console.log("User selected date: " + e.value);
+            chosenDate = e.value;
+        });
     } else if ("android" === osname) {
         $.creditCardWnd.addEventListener("open", function() {
             if (Ti.Platform.Android.API_LEVEL >= 11) {
@@ -424,10 +440,6 @@ function Controller() {
         $.btnChkBox.addEventListener("click", function(e) {
             e.source.backgroundImage = "/aimages/squarechkboxbkg.png" == e.source.backgroundImage ? "/aimages/squarecheckedbkg.png" : "/aimages/squarechkboxbkg.png";
         });
-        $.pickerExpDate.addEventListener("change", function(e) {
-            console.log("User selected date: " + e.value);
-            chosenDate = e.value;
-        });
         $.btnVisa.addEventListener("click", function() {
             $.btnVisa.backgroundColor = "blue";
             $.btnMaster.backgroundColor = "#fff";
@@ -443,7 +455,42 @@ function Controller() {
             $.btnMaster.backgroundColor = "#fff";
             $.btnAmex.backgroundColor = "blue";
         });
+        var slide_in = Titanium.UI.createAnimation({
+            duration: 300,
+            bottom: 0
+        });
+        var slide_out = Titanium.UI.createAnimation({
+            duration: 300,
+            bottom: -251
+        });
+        $.btnShowExpDate.addEventListener("click", function() {
+            $.datePicker.showDatePickerDialog({
+                value: new Date(),
+                callback: function(e) {
+                    if (e.cancel) Ti.API.info("user canceled dialog"); else {
+                        Ti.API.info("value is: " + e.value);
+                        Ti.API.info("lets see what this object is" + JSON.stringify(e));
+                        selectedDate = e.value;
+                        var dateval = e.value;
+                        $.txtDate.value = formatDate(dateval);
+                    }
+                }
+            });
+        });
     }
+    var month_names = new Array();
+    month_names[month_names.length] = "Jan";
+    month_names[month_names.length] = "Feb";
+    month_names[month_names.length] = "March";
+    month_names[month_names.length] = "April";
+    month_names[month_names.length] = "May";
+    month_names[month_names.length] = "June";
+    month_names[month_names.length] = "July";
+    month_names[month_names.length] = "Aug";
+    month_names[month_names.length] = "Sept";
+    month_names[month_names.length] = "Oct";
+    month_names[month_names.length] = "Nov";
+    month_names[month_names.length] = "Dec";
     _.extend($, exports);
 }
 

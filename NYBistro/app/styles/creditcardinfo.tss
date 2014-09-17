@@ -41,6 +41,7 @@
 	left:'8',
 	width:'300',
 	height:'50',
+	color : 'black',
 	backgroundColor:'#e9e7db',
 	borderRadius:'5',
 	//returnKeyType:Ti.UI.RETURNKEY_DONE
