@@ -1,6 +1,6 @@
 var args = arguments[0] || {};
 
-// Get the items in this subcategory
+// Get the items in this
 var subcatid = args.subcatid;
 var osname = Ti.Platform.osname;
 var aUser;
