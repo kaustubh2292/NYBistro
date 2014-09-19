@@ -1,7 +1,7 @@
 function Controller() {
     function formatDate(dateString) {
         var current_date = new Date(dateString);
-        var dateString = current_date.getMonth() + " " + current_date.getDate() + " " + current_date.getFullYear();
+        var dateString = current_date.getDate() + "/" + current_date.getMonth() + "/" + current_date.getFullYear();
         return dateString;
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
@@ -35,11 +35,11 @@ function Controller() {
     $.__views.lblFirstName = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         top: "8",
-        left: "9",
+        left: "8",
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblFirstName",
@@ -47,10 +47,10 @@ function Controller() {
     });
     $.__views.containerView.add($.__views.lblFirstName);
     $.__views.txtfirstname = Ti.UI.createTextField({
-        top: "8",
+        top: "5",
         left: "8",
-        width: "300",
-        height: "50",
+        width: "200",
+        height: "40",
         color: "black",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
@@ -60,11 +60,11 @@ function Controller() {
     $.__views.lblLastName = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         top: "8",
-        left: "9",
+        left: "8",
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblLastName",
@@ -72,10 +72,10 @@ function Controller() {
     });
     $.__views.containerView.add($.__views.lblLastName);
     $.__views.txtlasttname = Ti.UI.createTextField({
-        top: "8",
+        top: "5",
         left: "8",
-        width: "300",
-        height: "50",
+        width: "200",
+        height: "40",
         color: "black",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
@@ -85,11 +85,11 @@ function Controller() {
     $.__views.lblcardtype = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         top: "8",
-        left: "9",
+        left: "8",
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblcardtype",
@@ -99,8 +99,8 @@ function Controller() {
     $.__views.creditOptions = Ti.UI.createView({
         id: "creditOptions",
         top: "5",
-        width: "453",
-        height: "50",
+        width: "300",
+        height: "35",
         layout: "horizontal",
         borderRadius: "10",
         borderColor: "blue",
@@ -109,7 +109,7 @@ function Controller() {
     $.__views.containerView.add($.__views.creditOptions);
     $.__views.btnVisa = Ti.UI.createButton({
         height: Ti.UI.SIZE,
-        width: 150,
+        width: 102,
         left: 0,
         title: "Visa",
         color: "black",
@@ -121,7 +121,7 @@ function Controller() {
     $.__views.creditOptions.add($.__views.btnVisa);
     $.__views.btnMaster = Ti.UI.createButton({
         height: Ti.UI.SIZE,
-        width: 150,
+        width: 102,
         title: "Master",
         color: "black",
         backgroundColor: "#fff",
@@ -132,7 +132,7 @@ function Controller() {
     $.__views.creditOptions.add($.__views.btnMaster);
     $.__views.btnAmex = Ti.UI.createButton({
         height: Ti.UI.SIZE,
-        width: 150,
+        width: 102,
         title: "Amex",
         color: "black",
         backgroundColor: "#fff",
@@ -144,11 +144,11 @@ function Controller() {
     $.__views.lblccnumber = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         top: "8",
-        left: "9",
+        left: "8",
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblccnumber",
@@ -156,42 +156,42 @@ function Controller() {
     });
     $.__views.containerView.add($.__views.lblccnumber);
     $.__views.txtcardnumber = Ti.UI.createTextField({
-        top: "8",
+        top: "5",
         left: "8",
-        width: "300",
-        height: "50",
+        width: "200",
+        height: "40",
         color: "black",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
         id: "txtcardnumber"
     });
     $.__views.containerView.add($.__views.txtcardnumber);
-    $.__views.expDateView = Ti.UI.createView({
-        id: "expDateView",
-        top: "8",
-        height: Ti.UI.SIZE,
-        layout: "horizontal"
-    });
-    $.__views.containerView.add($.__views.expDateView);
     $.__views.lblexpiry = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         top: "8",
-        left: "9",
+        left: "8",
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblexpiry",
         text: "Expiry Date:"
     });
-    $.__views.expDateView.add($.__views.lblexpiry);
+    $.__views.containerView.add($.__views.lblexpiry);
+    $.__views.expDateView = Ti.UI.createView({
+        id: "expDateView",
+        top: "5",
+        height: Ti.UI.SIZE,
+        layout: "horizontal"
+    });
+    $.__views.containerView.add($.__views.expDateView);
     $.__views.txtDate = Ti.UI.createTextField({
-        top: "8",
-        left: "20",
-        width: "200",
-        height: "50",
+        top: "5",
+        left: "8",
+        width: "175",
+        height: "40",
         color: "black",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
@@ -200,20 +200,20 @@ function Controller() {
     $.__views.expDateView.add($.__views.txtDate);
     $.__views.btnShowExpDate = Ti.UI.createButton({
         id: "btnShowExpDate",
-        top: "8",
-        height: "45",
-        width: "30",
+        top: "5",
+        height: "40",
+        width: "25",
         backgroundImage: "/aimages/btndownarrowbkg.png"
     });
     $.__views.expDateView.add($.__views.btnShowExpDate);
     $.__views.lblcvv = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         top: "8",
-        left: "9",
+        left: "8",
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblcvv",
@@ -221,10 +221,10 @@ function Controller() {
     });
     $.__views.containerView.add($.__views.lblcvv);
     $.__views.txtcvv = Ti.UI.createTextField({
-        top: "8",
+        top: "5",
         left: "8",
         width: "100",
-        height: "50",
+        height: "40",
         color: "black",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
@@ -234,11 +234,11 @@ function Controller() {
     $.__views.lblbillingaddr = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         top: "8",
-        left: "9",
+        left: "8",
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblbillingaddr",
@@ -246,10 +246,10 @@ function Controller() {
     });
     $.__views.containerView.add($.__views.lblbillingaddr);
     $.__views.txtbillingaddr = Ti.UI.createTextField({
-        top: "8",
+        top: "5",
         left: "8",
-        width: "300",
-        height: "50",
+        width: "200",
+        height: "40",
         color: "black",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
@@ -259,11 +259,11 @@ function Controller() {
     $.__views.lblcity = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         top: "8",
-        left: "9",
+        left: "8",
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblcity",
@@ -271,10 +271,10 @@ function Controller() {
     });
     $.__views.containerView.add($.__views.lblcity);
     $.__views.txtcity = Ti.UI.createTextField({
-        top: "8",
+        top: "5",
         left: "8",
-        width: "300",
-        height: "50",
+        width: "200",
+        height: "40",
         color: "black",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
@@ -284,11 +284,11 @@ function Controller() {
     $.__views.lblstate = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         top: "8",
-        left: "9",
+        left: "8",
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblstate",
@@ -296,10 +296,10 @@ function Controller() {
     });
     $.__views.containerView.add($.__views.lblstate);
     $.__views.txtstate = Ti.UI.createTextField({
-        top: "8",
+        top: "5",
         left: "8",
-        width: "300",
-        height: "50",
+        width: "200",
+        height: "40",
         color: "black",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
@@ -309,11 +309,11 @@ function Controller() {
     $.__views.lblzip = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         top: "8",
-        left: "9",
+        left: "8",
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblzip",
@@ -321,10 +321,10 @@ function Controller() {
     });
     $.__views.containerView.add($.__views.lblzip);
     $.__views.txtzip = Ti.UI.createTextField({
-        top: "8",
+        top: "5",
         left: "8",
-        width: "300",
-        height: "50",
+        width: "200",
+        height: "40",
         color: "black",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
@@ -342,14 +342,14 @@ function Controller() {
     $.__views.btnChkBox = Ti.UI.createButton({
         id: "btnChkBox",
         backgroundImage: "/aimages/squarechkboxbkg.png",
-        width: "19.5",
-        height: "18.5"
+        width: "17",
+        height: "16"
     });
     $.__views.saveccInfo.add($.__views.btnChkBox);
     $.__views.lblsaveccinfo = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         top: "0",
@@ -364,15 +364,15 @@ function Controller() {
         id: "btnSubmit",
         backgroundImage: "/aimages/btnsubmitbkg.png",
         top: "10",
-        width: "103",
-        height: "36"
+        width: "70",
+        height: "32"
     });
     $.__views.containerView.add($.__views.btnSubmit);
     $.__views.datePickerView = Ti.UI.createView({
         id: "datePickerView",
-        height: "251",
-        width: "80%",
-        bottom: "-251"
+        height: "150",
+        width: "90%",
+        bottom: "-150"
     });
     $.__views.creditCardWnd.add($.__views.datePickerView);
     $.__views.datePicker = Ti.UI.createPicker({
@@ -478,19 +478,6 @@ function Controller() {
             });
         });
     }
-    var month_names = new Array();
-    month_names[month_names.length] = "Jan";
-    month_names[month_names.length] = "Feb";
-    month_names[month_names.length] = "March";
-    month_names[month_names.length] = "April";
-    month_names[month_names.length] = "May";
-    month_names[month_names.length] = "June";
-    month_names[month_names.length] = "July";
-    month_names[month_names.length] = "Aug";
-    month_names[month_names.length] = "Sept";
-    month_names[month_names.length] = "Oct";
-    month_names[month_names.length] = "Nov";
-    month_names[month_names.length] = "Dec";
     _.extend($, exports);
 }
 

@@ -102,8 +102,8 @@ function Controller() {
     });
     $.__views.homeWin && $.addTopLevelView($.__views.homeWin);
     $.__views.btnHome = Ti.UI.createButton({
-        width: "80",
-        height: "70",
+        width: "60",
+        height: "50",
         id: "btnHome",
         backgroundImage: "/aimages/home.png",
         left: "4%",
@@ -112,8 +112,8 @@ function Controller() {
     $.__views.homeWin.add($.__views.btnHome);
     doClick ? $.__views.btnHome.addEventListener("click", doClick) : __defers["$.__views.btnHome!click!doClick"] = true;
     $.__views.btnMenu = Ti.UI.createButton({
-        width: "80",
-        height: "70",
+        width: "60",
+        height: "50",
         id: "btnMenu",
         backgroundImage: "/aimages/menu.png",
         left: "28%",
@@ -122,8 +122,8 @@ function Controller() {
     $.__views.homeWin.add($.__views.btnMenu);
     menuClicked ? $.__views.btnMenu.addEventListener("click", menuClicked) : __defers["$.__views.btnMenu!click!menuClicked"] = true;
     $.__views.btnMap = Ti.UI.createButton({
-        width: "80",
-        height: "70",
+        width: "60",
+        height: "50",
         id: "btnMap",
         backgroundImage: "/aimages/map.png",
         left: "52%",
@@ -132,8 +132,8 @@ function Controller() {
     $.__views.homeWin.add($.__views.btnMap);
     mapClicked ? $.__views.btnMap.addEventListener("click", mapClicked) : __defers["$.__views.btnMap!click!mapClicked"] = true;
     $.__views.btnCart = Ti.UI.createButton({
-        width: "80",
-        height: "70",
+        width: "60",
+        height: "50",
         id: "btnCart",
         backgroundImage: "/aimages/cart.png",
         left: "76%",
@@ -142,8 +142,8 @@ function Controller() {
     $.__views.homeWin.add($.__views.btnCart);
     cartClicked ? $.__views.btnCart.addEventListener("click", cartClicked) : __defers["$.__views.btnCart!click!cartClicked"] = true;
     $.__views.btnAddUser = Ti.UI.createButton({
-        width: "80",
-        height: "70",
+        width: "60",
+        height: "50",
         id: "btnAddUser",
         backgroundImage: "/aimages/adduser.png",
         left: "4%",
@@ -152,8 +152,8 @@ function Controller() {
     $.__views.homeWin.add($.__views.btnAddUser);
     addUserClicked ? $.__views.btnAddUser.addEventListener("click", addUserClicked) : __defers["$.__views.btnAddUser!click!addUserClicked"] = true;
     $.__views.btnReservation = Ti.UI.createButton({
-        width: "80",
-        height: "70",
+        width: "60",
+        height: "50",
         id: "btnReservation",
         backgroundImage: "/aimages/reservation.png",
         left: "28%",
@@ -162,8 +162,8 @@ function Controller() {
     $.__views.homeWin.add($.__views.btnReservation);
     reservationClicked ? $.__views.btnReservation.addEventListener("click", reservationClicked) : __defers["$.__views.btnReservation!click!reservationClicked"] = true;
     $.__views.btnCoupons = Ti.UI.createButton({
-        width: "80",
-        height: "70",
+        width: "60",
+        height: "50",
         id: "btnCoupons",
         backgroundImage: "/aimages/coupons.png",
         left: "52%",
@@ -172,8 +172,8 @@ function Controller() {
     $.__views.homeWin.add($.__views.btnCoupons);
     couponsClicked ? $.__views.btnCoupons.addEventListener("click", couponsClicked) : __defers["$.__views.btnCoupons!click!couponsClicked"] = true;
     $.__views.btnMore = Ti.UI.createButton({
-        width: "80",
-        height: "70",
+        width: "60",
+        height: "50",
         id: "btnMore",
         backgroundImage: "/aimages/more.png",
         left: "76%",

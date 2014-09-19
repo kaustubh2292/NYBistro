@@ -16,28 +16,28 @@ function Controller() {
         left: "10",
         top: "10",
         bottom: "10",
-        height: "37",
-        width: "38.5",
+        height: "25",
+        width: "28",
         id: "imgViewIcon"
     });
     $.__views.__alloyId55.add($.__views.imgViewIcon);
     $.__views.lblTitle = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 22,
+            fontSize: 18,
             fontWeight: "bold"
         },
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblTitle",
-        left: "70"
+        left: "50"
     });
     $.__views.__alloyId55.add($.__views.lblTitle);
     $.__views.rightArrowView = Ti.UI.createImageView({
         id: "rightArrowView",
-        left: "380",
-        height: "33",
-        width: "16",
+        right: "20",
+        height: "25",
+        width: "14",
         image: "/aimages/arrow2.png"
     });
     $.__views.__alloyId55.add($.__views.rightArrowView);

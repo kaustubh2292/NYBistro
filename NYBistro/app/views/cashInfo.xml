@@ -31,26 +31,33 @@
 	<Window class="containerdroid" id="cashInfoWnd" statusBarHidden="false" navBarHidden="false" platform="android">
 		<ScrollView height="100%" showHorizontalScrollIndicator="false" showVerticalScrollIndicator="true">
 			<View id="containerView" backgroundColor="#ffffff" layout="vertical" height="Ti.UI.SIZE">
-				<Label class="textformatdroid" id="lblFirstName" text="First Name:" />
-				<TextField class="textfieldroid" id="txtfirstname" color="black" />
 				
-				<Label class="textformatdroid" id="lblLastName" text="Last Name:" />
-				<TextField class="textfieldroid" id="txtlasttname" color="black" />
-				
-				<View id="totalView" top="10" backgroundImage="/aimages/optionsviewbkg.png" width="453" height="50" layout="horizontal">
-					<Label class ="textformatdroid" id="lblTotalText" top="12" width="220" left="4" text="Total:" textAlign="left" />
-					<Label class="totalvaldroid" id="lblTotalVal" top="12" left="150" />
+				<View id="firstView" top="10" width="310" height="60">
+					<Label class="textformatdroid" id="lblFirstName" text="First Name:" />
+					<TextField class="textfieldroid" id="txtfirstname" color="black" left="110"/>
 				</View>
 				
-				<Label class="textformatdroid" id="lblPaid" text="Amount Paid:" />
-				<TextField class="textfieldroid" id="txtPaid" color="black" width="100"/>
-				
-				<View id="remainView" top="10" backgroundImage="/aimages/optionsviewbkg.png" width="453" height="50" layout="horizontal">
-					<Label class ="textformatdroid" id="lblRemainText" top="12" width="220" left="4" text="Remaining:" textAlign="left" />
-					<Label class="totalvaldroid" id="lblRemainVal" top="12" left="150" />
+				<View id="lastView" top="10" width="310" height="60">
+					<Label class="textformatdroid" id="lblLastName" text="Last Name:" />
+					<TextField class="textfieldroid" id="txtlasttname" color="black" left="110"/>
 				</View>
 				
-				<Button id="btnSubmit" backgroundImage="/aimages/btnsubmitbkg.png" top="10" width="103" height="36" />
+				<View id="totalView" top="10" backgroundImage="/aimages/optionsviewbkg.png" width="310" height="30" layout="horizontal">
+					<Label class ="textformatdroid" id="lblTotalText" top="5" left="4" text="Total:" textAlign="left" />
+					<Label class="totalvaldroid" id="lblTotalVal" top="5" left="200" />
+				</View>
+				
+				<View id="paidView" top="10" width="310" height="60">
+					<Label class="textformatdroid" id="lblPaid" text="Amount Paid:" />
+					<TextField class="textfieldroid" id="txtPaid" color="black" width="80" left="110"/>
+				</View>
+				
+				<View id="remainView" top="10" backgroundImage="/aimages/optionsviewbkg.png" width="310" height="30" layout="horizontal">
+					<Label class ="textformatdroid" id="lblRemainText" top="5" left="4" text="Remaining:" textAlign="left" />
+					<Label class="totalvaldroid" id="lblRemainVal" top="5" left="160" />
+				</View>
+				
+				<Button id="btnSubmit" backgroundImage="/aimages/btnsubmitbkg.png" top="15" width="70" height="32" />
 			</View>
 		</ScrollView>
 	</Window>

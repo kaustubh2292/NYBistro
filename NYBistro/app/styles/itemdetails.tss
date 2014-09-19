@@ -54,14 +54,14 @@
 
 ".priceandroid": {
 	backgroundImage:'/aimages/pricebutton.png',
-	height:46,
-	width:119,
-	top:26,
-	right:70,
-	top:386,
+	height:30,
+	width:60,
+	top:15,
+	right:15,
+	top:240,
 	font:{
 		// fontFamily: 'Aerial',
-		fontSize:15,
+		fontSize:12,
 		fontWeight:'bold'
 	},
 	color:'white',
@@ -71,7 +71,7 @@
 ".textandroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:17,
+		fontSize:12,
 		fontWeight:'bold'
 	},
 	color:'#a4451c',
@@ -81,13 +81,13 @@
 ".shortdescandroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:13,
+		fontSize:9,
 		fontWeight:'normal'
 	},
 	color:'#806754',
-	width : 170,
-	top:400,
-	left:70,
+	width : 150,
+	top:250,
+	left:65,
 	height:Ti.UI.SIZE
 },
 
@@ -97,10 +97,10 @@
 		fontSize:15,
 		fontWeight:'bold'
 	},
-	top: 496,
-	left: 90,
-	width: 55,
-	height: 70,
+	top: 295,
+	left: 60,
+	width: 30,
+	height: 40,
 	backgroundImage:'/aimages/qtybkg.png',
 	color:'#806754',
 	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER

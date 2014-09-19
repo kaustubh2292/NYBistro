@@ -15,7 +15,7 @@ var roundNumber = function(number, digits) {
 var user = Alloy.Models.instance("user");
 
 // Set subtotal
-$.lblSubtotalVal.text = orderData.get("SubTotal");
+$.lblSubtotalVal.text = "$" + orderData.get("SubTotal");
 
 // Set total = subtotal + taxes
 orderTotal = roundNumber((orderData.get("SubTotal") + 2.30), 2);
@@ -236,7 +236,7 @@ else if (osname === 'android') {
 
 				$.optionalCharges.animate({
 					duration : 200,
-					height : '50',
+					height : '30dp',
 					
 				});
 				optChargeCnt++;
@@ -286,7 +286,7 @@ else if (osname === 'android') {
 	});
 
 	var movelabel = {
-		top : 20,
+		top : '15dp',
 		duration : 1000
 	};
 	var collapsed = true;
@@ -338,7 +338,7 @@ else if (osname === 'android') {
 
 		$.delCharges.animate({
 			duration : 200,
-			height : '50'
+			height : '30dp'
 		});
 
 		$.btnCarryOut.backgroundColor = "#fff";

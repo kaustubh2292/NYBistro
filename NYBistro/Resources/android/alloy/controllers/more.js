@@ -24,7 +24,7 @@ function Controller() {
     $.__views.moreWnd.add($.__views.containerView);
     $.__views.moreTable = Ti.UI.createTableView({
         top: "5",
-        borderRadius: "10",
+        borderRadius: "7",
         borderWidth: "1",
         borderColor: "#95512c",
         id: "moreTable",

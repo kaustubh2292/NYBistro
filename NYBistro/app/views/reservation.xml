@@ -55,37 +55,35 @@
 	<Window id="reservationWnd" class="containerandroid" platform="android" statusBarHidden="false" navBarHidden= "false">
 		<View id="containerView" backgroundColor="#ffffff" height="Ti.UI.SIZE" top="0" width="100%" layout="vertical" >
 			<View id="foodImageView" height="Ti.UI.SIZE" top="5">
-				<ImageView id="foodBkg" image="/aimages/detailfoodimgbkg.png" top="0" width="580" height="370" />
-				<ImageView id="imgFood" image="/aimages/detailsfoodimage.png" top="5" width="470" height="340" />
+				<ImageView id="foodBkg" image="/aimages/detailfoodimgbkg.png" top="0" width="580" height="230" />
+				<ImageView id="imgFood" image="/aimages/detailsfoodimage.png" top="5" width="350" height="210" />
 			</View>
 			<View id="dateView" top="15" height="Ti.UI.SIZE" layout="horizontal">
-				<Label class="textformatdroid" id="lblDate" left="40" text="Date:"/>
-				<TextField class="textfielddroid" id="txtDate" width="200" left="10"/>
-				<Button id="btnUpdateDate" height="48.5" width="29" backgroundImage ="/aimages/btndownarrowbkg.png"/>
+				<Label class="textformatdroid" id="lblDate" left="10" text="Date:"/>
+				<TextField class="textfielddroid" id="txtDate" left="10"/>
+				<Button id="btnUpdateDate" height="40" width="18" backgroundImage ="/aimages/btndownarrowbkg.png"/>
 			</View>
 			<View id="timeView" top="15" height="Ti.UI.SIZE" layout="horizontal">
-				<Label class="textformatdroid" id="lblTime" left="40" text="Time:"/>
-				<TextField class="textfielddroid" id="txtTime" width="200" left="10"/>
-				<Button id="btnUpdateTime" height="48.5" width="29" backgroundImage ="/aimages/btndownarrowbkg.png"/>
+				<Label class="textformatdroid" id="lblTime" left="10" text="Time:"/>
+				<TextField class="textfielddroid" id="txtTime" left="8"/>
+				<Button id="btnUpdateTime" height="40" width="18" backgroundImage ="/aimages/btndownarrowbkg.png"/>
 			</View>
-			<View id="numberOfPeopleView" top="15" height="Ti.UI.SIZE" layout="horizontal">
-				<Label class="textformatdroid" id="lblNumberOfPeople" text="Number Of People:" left="40" />
-				<Label class ="quantitydroid" id="lblQtyNum" left="15" text="1"  />
+			<View id="numberOfPeopleView" top="10" height="Ti.UI.SIZE" layout="horizontal">
+				<Label class="textformatdroid" id="lblNumberOfPeople" text="Number Of People:" left="10" />
+				<Label class ="quantitydroid" id="lblQtyNum" left="10" text="1"  />
 				<View id="btnView" layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.SIZE">
-					<Button id="btnAdd" backgroundImage="/aimages/qtyadditionbkg.png" height="35" width="30" />
-					<Button id="btnSub" backgroundImage="/aimages/qtysubtractionbkg.png" height="35" width="30" />
+					<Button id="btnAdd" backgroundImage="/aimages/qtyadditionbkg.png" height="20" width="25" />
+					<Button id="btnSub" backgroundImage="/aimages/qtysubtractionbkg.png" height="20" width="25" />
 				</View>
 			</View>
 			
-			<Button id="btnReserve" top="15" height="50" width="120" backgroundImage="/aimages/btnreservebkg.png" />
+			<Button id="btnReserve" top="20" height="35" width="75" backgroundImage="/aimages/btnreservebkg.png" />
 		</View>
 		
 		
-		<View id="datePickerView" height="251" width="96%" bottom="-251" >
+		<View id="datePickerView" height="150" width="90%" bottom="-150" >
 				<Picker id="datePicker"/>
 		</View>
 		
 	</Window>
-	
-	
 </Alloy>

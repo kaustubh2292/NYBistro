@@ -31,13 +31,13 @@
 ".celldroid": {
 	backgroundImage:'/aimages/profilebg.png',
 	// backgroundColor:'transparent',
-	height:40
+	height:30
 	//size:Ti.UI.FILL
 },
 ".textformatdroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:15,
+		fontSize:11,
 		fontWeight:'bold'
 	},
 	color:'#a4451c',
@@ -45,13 +45,13 @@
 },
 ".checkboxdroid":{
 	backgroundImage:'/aimages/chkboxunchecked.png',
-	width:'25',
-	height:'25'
+	width:'18',
+	height:'18'
 },
 ".dollarvaldroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:15,
+		fontSize:11,
 		fontWeight:'bold'
 	},
 	color:'#79b622',

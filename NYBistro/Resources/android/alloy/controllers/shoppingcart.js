@@ -70,22 +70,23 @@ function Controller() {
     $.__views.subtotalView = Ti.UI.createView({
         id: "subtotalView",
         top: "5",
+        left: "5",
         backgroundImage: "/aimages/subtotalbkg.png",
-        width: "450",
-        height: "50",
+        width: "310",
+        height: "40",
         layout: "horizontal"
     });
     $.__views.containerView.add($.__views.subtotalView);
     $.__views.lblSubTotalText = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 22,
+            fontSize: 18,
             fontWeight: "bold"
         },
         color: "#fe0000",
         height: Ti.UI.SIZE,
         id: "lblSubTotalText",
-        top: "12",
+        top: "7",
         left: "4",
         text: "Sub Total:",
         textAlign: "left"
@@ -94,14 +95,14 @@ function Controller() {
     $.__views.lblSubtotalVal = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 22,
+            fontSize: 18,
             fontWeight: "bold"
         },
         color: "#79b622",
         height: Ti.UI.SIZE,
         id: "lblSubtotalVal",
-        top: "12",
-        left: "220"
+        top: "7",
+        left: "150"
     });
     $.__views.subtotalView.add($.__views.lblSubtotalVal);
     $.__views.btnCheckout = Ti.UI.createButton({
@@ -109,8 +110,8 @@ function Controller() {
         backgroundImage: "/aimages/btncheckoutbkg.png",
         top: "10",
         bottom: "2",
-        width: "158",
-        height: "42"
+        width: "80",
+        height: "35"
     });
     $.__views.containerView.add($.__views.btnCheckout);
     var __alloyId121 = [];

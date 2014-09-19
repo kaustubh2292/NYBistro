@@ -48,7 +48,7 @@
 ".subtotaldroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:22,
+		fontSize:18,
 		fontWeight:'bold'
 	},
 	color:'#fe0000',
@@ -57,7 +57,7 @@
 ".totalvaldroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:22,
+		fontSize:18,
 		fontWeight:'bold'
 	},
 	color:'#79b622',

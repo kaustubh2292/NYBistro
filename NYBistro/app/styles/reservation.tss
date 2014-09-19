@@ -35,28 +35,28 @@
 ".textformatdroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:20,
+		fontSize:16,
 		fontWeight:'bold'
 	},
 	color:'#a4451c',
 	height:Ti.UI.SIZE
 },
 ".textfielddroid": {
-	width:'360',
-	height:'50',
+	width:'200',
+	height:'40',
 	backgroundColor:'#e9e7db',
-	borderRadius:'5',
+	borderRadius:'2',
 	color:"black"
 	
 },
 ".quantitydroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:15,
+		fontSize:12,
 		fontWeight:'bold'
 	},
-	width: 60,
-	height: 70,
+	width: 30,
+	height: 40,
 	backgroundImage:'/aimages/qtybkg.png',
 	color:'#806754',
 	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER

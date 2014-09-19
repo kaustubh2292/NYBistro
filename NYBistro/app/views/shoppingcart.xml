@@ -25,11 +25,11 @@
 			<TableView id="theTable" height="80%" allowsSelection="false" dataCollection="ShoppingCart">
 				<Require src="shoppingcartrow" />
 			</TableView>
-			<View id="subtotalView" top="5" backgroundImage="/aimages/subtotalbkg.png" width="450" height="50" layout="horizontal">
-				<Label class ="subtotaldroid" id="lblSubTotalText" top="12" left="4" text="Sub Total:" textAlign="left" />
-				<Label class="totalvaldroid" id="lblSubtotalVal" top="12" left="220"/>
+			<View id="subtotalView" top="5" left="5" backgroundImage="/aimages/subtotalbkg.png" width="310" height="40" layout="horizontal">
+				<Label class ="subtotaldroid" id="lblSubTotalText" top="7" left="4" text="Sub Total:" textAlign="left" />
+				<Label class="totalvaldroid" id="lblSubtotalVal" top="7" left="150"/>
 			</View>
-			<Button id="btnCheckout" backgroundImage='/aimages/btncheckoutbkg.png' top="10" bottom="2" width="158" height="42" />
+			<Button id="btnCheckout" backgroundImage='/aimages/btncheckoutbkg.png' top="10" bottom="2" width="80" height="35" />
 			<OptionDialog id="qtyOptions" title="Select Qunatity" platform="android">
             <Options>
                 <Option>1</Option>

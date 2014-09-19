@@ -30,12 +30,14 @@
 ".iconviewdroid": {
 	left:"10",
 	top:"10",
-	bottom:"10"
+	bottom:"10",
+	height:"25",
+	width:"28"
 },
 ".textformatdroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:20,
+		fontSize:16,
 		fontWeight:'bold'
 	},
 	color:'#a4451c',
@@ -43,7 +45,7 @@
 },
 ".checkboxdroid":{
 	backgroundImage:'/aimages/chkboxunchecked.png',
-	width:'25',
-	height:'25',
-	left:'360'
+	width:'20',
+	height:'20',
+	right:'20'
 }

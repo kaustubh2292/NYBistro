@@ -27,13 +27,13 @@
 	left:"10",
 	top:"10",
 	bottom:"10",
-	height:"37",
-	width:"38.5"
+	height:"25",
+	width:"28"
 },
 ".textformatdroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:22,
+		fontSize:18,
 		fontWeight:'bold'
 	},
 	color:'#a4451c',

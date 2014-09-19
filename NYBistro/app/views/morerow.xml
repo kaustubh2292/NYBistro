@@ -6,7 +6,7 @@
 	</TableViewRow>
 	<TableViewRow class="containerdroid" platform="android">
 		<ImageView class="iconviewdroid" id="imgViewIcon" />
-		<Label class="textformatdroid" id="lblTitle" left="70" />
-		<ImageView id="rightArrowView" left="380" height="33" width="16" image="/aimages/arrow2.png" />
+		<Label class="textformatdroid" id="lblTitle" left="50" />
+		<ImageView id="rightArrowView" right="20" height="25" width="14" image="/aimages/arrow2.png" />
 	</TableViewRow>
 </Alloy>

@@ -15,17 +15,16 @@
 		
 		</Window>
 		<Window class="containerandroid" id="loginWnd" platform="android">
-		<View backgroundColor="#ffffff" top="200" height="Ti.UI.SIZE" layout="vertical">
+		<View backgroundColor="#ffffff" top="120" height="Ti.UI.SIZE" layout="vertical">
 			
 			<Label class="textformatandroid" id="lblEmail" text="Email Address:" />
-				<TextField class="textfielddroid" id="txtEmailAddress"  />
-				
-				<Label class="textformat" id="lblPassword" text="Password:" />
-				<TextField class="textfielddroid" id="txtPassword"/>
-				<View top="10" layout="horizontal" height="Ti.UI.SIZE">
-				<Button id="btnSubmit" backgroundImage="/aimages/btnsubmitbkg.png" top="10" width="120" height="50" />
-				<Button id="btnSignUp" backgroundImage="/aimages/btnsubmitbkg.png" top="10" width="120" height="50" />
-				</View>
+			<TextField class="textfielddroid" id="txtEmailAddress"  />
+			<Label class="textformatandroid" id="lblPassword" text="Password:" />
+			<TextField class="textfielddroid" id="txtPassword"/>
+			<View top="10" layout="horizontal" height="Ti.UI.SIZE">
+				<Button id="btnSubmit" backgroundImage="/aimages/btnsubmitbkg.png" top="10" width="70" height="30" left="20"/>
+				<Button id="btnSignUp" backgroundImage="/aimages/buttonbg.png" title="Sign Up" top="10" width="70" height="30" left="30"/>
+			</View>
 		</View>
 		
 		</Window>			

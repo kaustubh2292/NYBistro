@@ -27,77 +27,90 @@ function Controller() {
         height: Ti.UI.SIZE
     });
     $.__views.__alloyId1.add($.__views.containerView);
+    $.__views.firstView = Ti.UI.createView({
+        id: "firstView",
+        top: "10",
+        width: "310",
+        height: "60"
+    });
+    $.__views.containerView.add($.__views.firstView);
     $.__views.lblFirstName = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
-        top: "8",
+        top: "15",
         left: "9",
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblFirstName",
         text: "First Name:"
     });
-    $.__views.containerView.add($.__views.lblFirstName);
+    $.__views.firstView.add($.__views.lblFirstName);
     $.__views.txtfirstname = Ti.UI.createTextField({
-        top: "8",
-        left: "8",
-        width: "300",
-        height: "50",
+        top: "10",
+        left: "110",
+        width: "180",
+        height: "40",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
         id: "txtfirstname",
         color: "black"
     });
-    $.__views.containerView.add($.__views.txtfirstname);
+    $.__views.firstView.add($.__views.txtfirstname);
+    $.__views.lastView = Ti.UI.createView({
+        id: "lastView",
+        top: "10",
+        width: "310",
+        height: "60"
+    });
+    $.__views.containerView.add($.__views.lastView);
     $.__views.lblLastName = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
-        top: "8",
+        top: "15",
         left: "9",
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblLastName",
         text: "Last Name:"
     });
-    $.__views.containerView.add($.__views.lblLastName);
+    $.__views.lastView.add($.__views.lblLastName);
     $.__views.txtlasttname = Ti.UI.createTextField({
-        top: "8",
-        left: "8",
-        width: "300",
-        height: "50",
+        top: "10",
+        left: "110",
+        width: "180",
+        height: "40",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
         id: "txtlasttname",
         color: "black"
     });
-    $.__views.containerView.add($.__views.txtlasttname);
+    $.__views.lastView.add($.__views.txtlasttname);
     $.__views.totalView = Ti.UI.createView({
         id: "totalView",
         top: "10",
         backgroundImage: "/aimages/optionsviewbkg.png",
-        width: "453",
-        height: "50",
+        width: "310",
+        height: "30",
         layout: "horizontal"
     });
     $.__views.containerView.add($.__views.totalView);
     $.__views.lblTotalText = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
-        top: "12",
+        top: "5",
         left: "4",
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblTotalText",
-        width: "220",
         text: "Total:",
         textAlign: "left"
     });
@@ -105,62 +118,68 @@ function Controller() {
     $.__views.lblTotalVal = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         color: "#79b622",
         height: Ti.UI.SIZE,
         id: "lblTotalVal",
-        top: "12",
-        left: "150"
+        top: "5",
+        left: "200"
     });
     $.__views.totalView.add($.__views.lblTotalVal);
+    $.__views.paidView = Ti.UI.createView({
+        id: "paidView",
+        top: "10",
+        width: "310",
+        height: "60"
+    });
+    $.__views.containerView.add($.__views.paidView);
     $.__views.lblPaid = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
-        top: "8",
+        top: "15",
         left: "9",
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblPaid",
         text: "Amount Paid:"
     });
-    $.__views.containerView.add($.__views.lblPaid);
+    $.__views.paidView.add($.__views.lblPaid);
     $.__views.txtPaid = Ti.UI.createTextField({
-        top: "8",
-        left: "8",
-        width: "100",
-        height: "50",
+        top: "10",
+        left: "110",
+        width: "80",
+        height: "40",
         backgroundColor: "#e9e7db",
         borderRadius: "5",
         id: "txtPaid",
         color: "black"
     });
-    $.__views.containerView.add($.__views.txtPaid);
+    $.__views.paidView.add($.__views.txtPaid);
     $.__views.remainView = Ti.UI.createView({
         id: "remainView",
         top: "10",
         backgroundImage: "/aimages/optionsviewbkg.png",
-        width: "453",
-        height: "50",
+        width: "310",
+        height: "30",
         layout: "horizontal"
     });
     $.__views.containerView.add($.__views.remainView);
     $.__views.lblRemainText = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
-        top: "12",
+        top: "5",
         left: "4",
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblRemainText",
-        width: "220",
         text: "Remaining:",
         textAlign: "left"
     });
@@ -168,22 +187,22 @@ function Controller() {
     $.__views.lblRemainVal = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         color: "#79b622",
         height: Ti.UI.SIZE,
         id: "lblRemainVal",
-        top: "12",
-        left: "150"
+        top: "5",
+        left: "160"
     });
     $.__views.remainView.add($.__views.lblRemainVal);
     $.__views.btnSubmit = Ti.UI.createButton({
         id: "btnSubmit",
         backgroundImage: "/aimages/btnsubmitbkg.png",
-        top: "10",
-        width: "103",
-        height: "36"
+        top: "15",
+        width: "70",
+        height: "32"
     });
     $.__views.containerView.add($.__views.btnSubmit);
     exports.destroy = function() {};

@@ -65,7 +65,7 @@
 				<TextField class="textfieldroid" id="txtlasttname" />
 				
 				<Label class="textformatdroid" id="lblcardtype" text="Card Type:" />
-				<View id="creditOptions" top="5" width="453" height="50" layout="horizontal"  borderRadius="10" borderColor="blue" borderWidth="1">
+				<View id="creditOptions" top="5" width="300" height="35" layout="horizontal"  borderRadius="10" borderColor="blue" borderWidth="1">
 					<Button id="btnVisa" class="visa"/>
 					<Button id="btnMaster" class="master"/>
 					<Button id="btnAmex" class="amex"/>
@@ -85,10 +85,10 @@
 				
 				
 				
-				<View id="expDateView" top="8" height="Ti.UI.SIZE" layout="horizontal">
-					<Label class="textformatdroid" id="lblexpiry" text="Expiry Date:"/>
-					<TextField class="textfieldroid" id="txtDate" width="200" left="20"/>
-					<Button id="btnShowExpDate" top="8" height="45" width="30" backgroundImage ="/aimages/btndownarrowbkg.png"/>
+				<Label class="textformatdroid" id="lblexpiry" text="Expiry Date:"/>
+				<View id="expDateView" top="5" height="Ti.UI.SIZE" layout="horizontal">
+					<TextField class="textfieldroid" id="txtDate" width="175"/>
+					<Button id="btnShowExpDate" top="5" height="40" width="25" backgroundImage ="/aimages/btndownarrowbkg.png"/>
 				</View>
 				
 				
@@ -108,14 +108,14 @@
 				<TextField class="textfieldroid" id="txtzip" />
 				
 				<View id="saveccInfo" top="8" left="8" height="Ti.UI.SIZE" layout="horizontal">
-					<Button id="btnChkBox" backgroundImage="/aimages/squarechkboxbkg.png" width="19.5" height="18.5" />
+					<Button id="btnChkBox" backgroundImage="/aimages/squarechkboxbkg.png" width="17" height="16" />
 					<Label class="textformatdroid" top="0" left="10" id="lblsaveccinfo" text="Save For Future Use" />
 				</View>
 				
-				<Button id="btnSubmit" backgroundImage="/aimages/btnsubmitbkg.png" top="10" width="103" height="36" />
+				<Button id="btnSubmit" backgroundImage="/aimages/btnsubmitbkg.png" top="10" width="70" height="32" />
 			</View>
 		</ScrollView>
-		<View id="datePickerView" height="251" width="80%" bottom="-251" >
+		<View id="datePickerView" height="150" width="90%" bottom="-150" >
 				<Picker id="datePicker"/>
 		</View>
 	</Window>

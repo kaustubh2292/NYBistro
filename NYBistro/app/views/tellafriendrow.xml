@@ -7,7 +7,7 @@
 	
 	<TableViewRow class="containerdroid" platform="android">
 		<ImageView class="iconviewdroid" id="imgViewIcon" />
-		<Label class="textformatdroid" id="lblTitle" left="70" />
+		<Label class="textformatdroid" id="lblTitle" left="50" />
 		<Button class="checkboxdroid" id="shareChkBox" />
 	</TableViewRow>
 </Alloy>

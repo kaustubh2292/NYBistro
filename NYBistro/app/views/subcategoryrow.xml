@@ -5,10 +5,11 @@
 		<Label class="subtitle" id="subtitle"/>
 		<ImageView class="right" id="rightImage"/>
 	</TableViewRow>
-	<TableViewRow class="catrow" id="rowView" platform="android" subcatid="{SubCatId}" >
-		<ImageView class="left" id="leftImage"/>
-		<Label class="title" id="primaryLabel" text="{Name}" />
-		<Label class="subtitle" id="subtitle"/>
-		<ImageView class="right" id="rightImage"/>
+	
+	<TableViewRow class="catrowandroid" id="rowView" platform="android" subcatid="{SubCatId}" >
+		<ImageView class="leftandroid" id="leftImage"/>
+		<Label class="titleandroid" id="primaryLabel" text="{Name}" />
+		<Label class="subtitleandroid" id="subtitle"/>
+		<ImageView class="rightandroid" id="rightImage"/>
 	</TableViewRow>
 </Alloy>

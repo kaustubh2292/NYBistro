@@ -40,15 +40,15 @@ function Controller() {
         id: "foodBkg",
         image: "/aimages/detailfoodimgbkg.png",
         width: "580",
-        height: "370",
+        height: "230",
         top: "0"
     });
     $.__views.containerView.add($.__views.foodBkg);
     $.__views.imgFood = Ti.UI.createImageView({
         id: "imgFood",
         image: "/aimages/detailsfoodimage.png",
-        width: "470",
-        height: "340",
+        width: "350",
+        height: "210",
         top: "10"
     });
     $.__views.containerView.add($.__views.imgFood);
@@ -56,18 +56,18 @@ function Controller() {
         id: "contentBkg",
         image: "/aimages/profilebg.png",
         width: "580",
-        height: "95",
-        top: "370"
+        height: "60",
+        top: "230"
     });
     $.__views.containerView.add($.__views.contentBkg);
     $.__views.lblPrice = Ti.UI.createLabel({
         backgroundImage: "/aimages/pricebutton.png",
-        height: 46,
-        width: 119,
-        top: 386,
-        right: 70,
+        height: 30,
+        width: 60,
+        top: 240,
+        right: 15,
         font: {
-            fontSize: 15,
+            fontSize: 12,
             fontWeight: "bold"
         },
         color: "white",
@@ -78,35 +78,35 @@ function Controller() {
     $.__views.lblFoodName = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 17,
+            fontSize: 12,
             fontWeight: "bold"
         },
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblFoodName",
-        top: "381",
-        left: "70"
+        top: "235",
+        left: "60"
     });
     $.__views.containerView.add($.__views.lblFoodName);
     $.__views.smallFoodImg = Ti.UI.createImageView({
         id: "smallFoodImg",
         image: "/aimages/item1.png",
-        width: "60",
-        height: "60",
-        top: "381",
-        left: "7"
+        width: "50",
+        height: "50",
+        top: "235",
+        left: "5"
     });
     $.__views.containerView.add($.__views.smallFoodImg);
     $.__views.lblDesc = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 13,
+            fontSize: 9,
             fontWeight: "normal"
         },
         color: "#806754",
-        width: 170,
-        top: 400,
-        left: 70,
+        width: 150,
+        top: 250,
+        left: 65,
         height: Ti.UI.SIZE,
         id: "lblDesc"
     });
@@ -114,15 +114,15 @@ function Controller() {
     $.__views.lblQntyLabel = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 17,
+            fontSize: 12,
             fontWeight: "bold"
         },
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblQntyLabel",
         text: "Quantity:",
-        top: "515",
-        left: "7"
+        top: "306",
+        left: "5"
     });
     $.__views.containerView.add($.__views.lblQntyLabel);
     $.__views.lblQtyNum = Ti.UI.createLabel({
@@ -131,10 +131,10 @@ function Controller() {
             fontSize: 15,
             fontWeight: "bold"
         },
-        top: 496,
-        left: 90,
-        width: 55,
-        height: 70,
+        top: 295,
+        left: 60,
+        width: 30,
+        height: 40,
         backgroundImage: "/aimages/qtybkg.png",
         color: "#806754",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
@@ -145,41 +145,41 @@ function Controller() {
     $.__views.btnAdd = Ti.UI.createButton({
         id: "btnAdd",
         backgroundImage: "/aimages/qtyadditionbkg.png",
-        top: "496",
-        left: "130",
-        height: "35",
-        width: "45"
+        top: "295",
+        left: "90",
+        height: "20",
+        width: "30"
     });
     $.__views.containerView.add($.__views.btnAdd);
     $.__views.btnSub = Ti.UI.createButton({
         id: "btnSub",
         backgroundImage: "/aimages/qtysubtractionbkg.png",
-        top: "531",
-        left: "130",
-        height: "35",
-        width: "45"
+        top: "315",
+        left: "90",
+        height: "20",
+        width: "30"
     });
     $.__views.containerView.add($.__views.btnSub);
     $.__views.btnAddtoCart = Ti.UI.createButton({
         id: "btnAddtoCart",
         backgroundImage: "/aimages/addbutton.png",
-        top: "501",
-        left: "190",
-        height: "60",
-        width: "90"
+        top: "295",
+        left: "130",
+        height: "40",
+        width: "60"
     });
     $.__views.containerView.add($.__views.btnAddtoCart);
     $.__views.lblSplInstruct = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 15,
+            fontSize: 12,
             fontWeight: "bold"
         },
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblSplInstruct",
         text: "Specific Instructions (If Any):",
-        top: "560",
+        top: "345",
         left: "7"
     });
     $.__views.containerView.add($.__views.lblSplInstruct);
@@ -187,10 +187,10 @@ function Controller() {
         id: "txtSpecInstruct",
         backgroundImage: "/aimages/specificinstrbkg.png",
         color: "black",
-        height: "223",
-        width: "470",
-        top: "580",
-        left: "7",
+        height: "150",
+        width: "300",
+        top: "360",
+        left: "5",
         borderRadius: "5",
         borderWidth: "1",
         windowSoftInputMode: Ti.UI.Android.SOFT_INPUT_ADJUST_PAN

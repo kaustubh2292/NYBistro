@@ -14,7 +14,7 @@ function Controller() {
         backgroundColor: "transparent",
         top: 5,
         bottom: 2,
-        height: 120,
+        height: 90,
         width: "95%",
         borderRadius: 10,
         borderWidth: 1,
@@ -24,9 +24,9 @@ function Controller() {
     $.__views.rowView.add($.__views.rowContainer);
     $.__views.leftImage = Ti.UI.createImageView({
         image: "/aimages/item1.png",
-        height: 95,
-        width: 95,
-        top: 8,
+        height: 70,
+        width: 70,
+        top: 10,
         left: 8,
         id: "leftImage"
     });
@@ -34,12 +34,12 @@ function Controller() {
     $.__views.primaryLabel = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 25,
+            fontSize: 20,
             fontWeight: "bold"
         },
         color: "#a4451c",
         top: 5,
-        left: 110,
+        left: 90,
         height: Ti.UI.SIZE,
         id: "primaryLabel",
         text: "undefined" != typeof $model.__transform["ItemName"] ? $model.__transform["ItemName"] : $model.get("ItemName")
@@ -48,28 +48,28 @@ function Controller() {
     $.__views.price = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 14,
             fontWeight: "normal"
         },
         color: "#806754",
-        left: 110,
+        left: 100,
         height: Ti.UI.SIZE,
         id: "price",
-        top: "32",
+        top: "25",
         text: "undefined" != typeof $model.__transform["ItemPrice"] ? $model.__transform["ItemPrice"] : $model.get("ItemPrice")
     });
     $.__views.rowContainer.add($.__views.price);
     $.__views.quantity = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 14,
             fontWeight: "normal"
         },
         color: "#806754",
-        left: 110,
+        left: 100,
         height: Ti.UI.SIZE,
         id: "quantity",
-        top: "55"
+        top: "35"
     });
     $.__views.rowContainer.add($.__views.quantity);
     $.__views.btnChangeQty = Ti.UI.createButton({
@@ -81,19 +81,19 @@ function Controller() {
         color: "#ebbca3",
         backgroundImage: "/aimages/buttonbg.png",
         id: "btnChangeQty",
-        top: "80",
+        top: "60",
         left: "110",
-        width: "60",
-        height: "35",
+        width: "50",
+        height: "25",
         title: "Update"
     });
     $.__views.rowContainer.add($.__views.btnChangeQty);
     $.__views.btnDelete = Ti.UI.createButton({
         id: "btnDelete",
         top: "30",
-        left: "380",
-        height: "30",
-        width: "35",
+        left: "250",
+        height: "20",
+        width: "23",
         backgroundImage: "/aimages/btndelete.png"
     });
     $.__views.rowContainer.add($.__views.btnDelete);

@@ -1,18 +1,18 @@
 var osname = Ti.Platform.osname;
 // Array to hold month names
 var month_names = new Array();
-month_names[month_names.length] = "January";
-month_names[month_names.length] = "February";
+month_names[month_names.length] = "Jan";
+month_names[month_names.length] = "Feb";
 month_names[month_names.length] = "March";
 month_names[month_names.length] = "April";
 month_names[month_names.length] = "May";
 month_names[month_names.length] = "June";
 month_names[month_names.length] = "July";
-month_names[month_names.length] = "August";
-month_names[month_names.length] = "September";
-month_names[month_names.length] = "October";
-month_names[month_names.length] = "November";
-month_names[month_names.length] = "December";
+month_names[month_names.length] = "Aug";
+month_names[month_names.length] = "Sept";
+month_names[month_names.length] = "Oct";
+month_names[month_names.length] = "Nov";
+month_names[month_names.length] = "Dec";
 
 var day_names = new Array();
 day_names[day_names.length] = "Sunday";
@@ -260,8 +260,8 @@ function formatDate(dateString) {
 	var current_date = new Date(dateString);
 
 	var dateString = day_names[current_date.getDay()] + ", ";
-	dateString = dateString + month_names[current_date.getMonth()] + ", ";
-	dateString = dateString + " " + current_date.getDate() + " " + current_date.getFullYear();
+	dateString = dateString + month_names[current_date.getMonth()] + "-";
+	dateString = dateString + current_date.getDate() + "-" + current_date.getFullYear();
 
 	return dateString;
 }

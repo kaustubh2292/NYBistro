@@ -28,19 +28,19 @@
 ".textformatdroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:18,
+		fontSize:15,
 		fontWeight:'bold'
 	},
-	top:'8',
+	top:'15',
 	left:'9',
 	color:'#a4451c',
 	height:Ti.UI.SIZE
 },
 ".textfieldroid": {
-	top:'8',
-	left:'8',
-	width:'300',
-	height:'50',
+	top:'10',
+	left:'10',
+	width:'180',
+	height:'40',
 	backgroundColor:'#e9e7db',
 	borderRadius:'5',
 	//returnKeyType:Ti.UI.RETURNKEY_DONE
@@ -48,7 +48,7 @@
 ".totalvaldroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:18,
+		fontSize:15,
 		fontWeight:'bold'
 	},
 	color:'#79b622',

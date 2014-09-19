@@ -13,7 +13,7 @@ function Controller() {
     $.__views.loginWnd && $.addTopLevelView($.__views.loginWnd);
     $.__views.__alloyId41 = Ti.UI.createView({
         backgroundColor: "#ffffff",
-        top: "200",
+        top: "120",
         height: Ti.UI.SIZE,
         layout: "vertical",
         id: "__alloyId41"
@@ -22,7 +22,7 @@ function Controller() {
     $.__views.lblEmail = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 22,
+            fontSize: 18,
             fontWeight: "bold"
         },
         top: "8",
@@ -35,18 +35,19 @@ function Controller() {
     $.__views.__alloyId41.add($.__views.lblEmail);
     $.__views.txtEmailAddress = Ti.UI.createTextField({
         top: "8",
-        left: "8",
-        width: "450",
-        height: "50",
+        left: "9",
+        width: "220",
+        height: "40",
+        color: "black",
         backgroundColor: "#e9e7db",
-        borderRadius: "5",
+        borderRadius: "2",
         id: "txtEmailAddress"
     });
     $.__views.__alloyId41.add($.__views.txtEmailAddress);
     $.__views.lblPassword = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 15,
+            fontSize: 18,
             fontWeight: "bold"
         },
         top: "8",
@@ -59,11 +60,12 @@ function Controller() {
     $.__views.__alloyId41.add($.__views.lblPassword);
     $.__views.txtPassword = Ti.UI.createTextField({
         top: "8",
-        left: "8",
-        width: "450",
-        height: "50",
+        left: "9",
+        width: "220",
+        height: "40",
+        color: "black",
         backgroundColor: "#e9e7db",
-        borderRadius: "5",
+        borderRadius: "2",
         id: "txtPassword"
     });
     $.__views.__alloyId41.add($.__views.txtPassword);
@@ -78,16 +80,19 @@ function Controller() {
         id: "btnSubmit",
         backgroundImage: "/aimages/btnsubmitbkg.png",
         top: "10",
-        width: "120",
-        height: "50"
+        width: "70",
+        height: "30",
+        left: "20"
     });
     $.__views.__alloyId42.add($.__views.btnSubmit);
     $.__views.btnSignUp = Ti.UI.createButton({
         id: "btnSignUp",
-        backgroundImage: "/aimages/btnsubmitbkg.png",
+        backgroundImage: "/aimages/buttonbg.png",
+        title: "Sign Up",
         top: "10",
-        width: "120",
-        height: "50"
+        width: "70",
+        height: "30",
+        left: "30"
     });
     $.__views.__alloyId42.add($.__views.btnSignUp);
     exports.destroy = function() {};

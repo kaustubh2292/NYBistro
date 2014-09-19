@@ -41,7 +41,7 @@
 ".subtotaldroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:15,
+		fontSize:11,
 		fontWeight:'bold'
 	},
 	color:'#fe0000',
@@ -50,7 +50,7 @@
 ".textformatdroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:18,
+		fontSize:15,
 		fontWeight:'bold'
 	},
 	color:'#a4451c',
@@ -60,7 +60,7 @@
 ".totalvaldroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:18,
+		fontSize:15,
 		fontWeight:'bold'
 	},
 	color:'#79b622',
@@ -73,66 +73,54 @@
 },*/
 ".carryout":{
 	height : Ti.UI.SIZE,
-	width : 150,
+	width : 102,
 	left:0,
 	title:'Carry Out',
 	color:'black',
 	backgroundColor:'#fff',
 	borderColor:'blue',
 	borderWidth:1
-	
-	
 },
 ".delivery":{
 	height : Ti.UI.SIZE,
-	width : 150,
+	width : 102,
 	title:'Delivery',
 	color:'black',
 	backgroundColor:'#fff',
 	borderColor:'blue',
 	borderWidth:1
-	
 },
 ".eathere":{
 	height : Ti.UI.SIZE,
-	width : 150,
+	width : 102,
 	title:'Eat Here',
 	color:'black',
 	backgroundColor:'#fff'
-	
-	
 }
 ".cash":{
 	height : Ti.UI.SIZE,
-	width : 150,
+	width : 102,
 	left:0,
 	title:'Cash',
 	color:'black',
 	backgroundColor:'#fff',
 	borderColor:'blue',
 	borderWidth:1
-
-	
 },
 ".crditcard":{
 	height : Ti.UI.SIZE,
-	width : 150,
+	width : 102,
 	title:'Credit Card',
 	color:'black',
 	backgroundColor:'#fff',
 	borderColor:'blue',
 	borderWidth:1
-	
 },
 ".paypal":{
 	height : Ti.UI.SIZE,
-	width : 150,
+	width : 102,
 	title:'Paypal',
 	color:'black',
 	backgroundColor:'#fff'
-	
-	
-	
-	
 }
 

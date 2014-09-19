@@ -9,9 +9,9 @@
 	
 	<TableViewRow id="rowView" platform="android" OptionsId="{OptionId}">
 		<View class="celldroid" id="containerView" layout="horizontal">
-			<Label class="textformatdroid" id="lblOption" left="4" top="10" text="{Name}"  width="120"/>
-			<Label class="dollarvaldroid" id="lblPrice" left="60" top="10" text="{Price}"/>
-			<Button class="checkboxdroid" id="imgCheckBox" left="87" top="10"/>			
+			<Label class="textformatdroid" id="lblOption" left="4" top="7" text="{Name}"  width="70"/>
+			<Label class="dollarvaldroid" id="lblPrice" left="40" top="7" text="{Price}"/>
+			<Button class="checkboxdroid" id="imgCheckBox" left="60" top="7"/>			
 		</View>
 	</TableViewRow>
 </Alloy>

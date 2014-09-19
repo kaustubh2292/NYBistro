@@ -9,7 +9,7 @@ function Controller() {
     $.__views.rowView = Ti.UI.createTableViewRow({
         backgroundImage: "/aimages/profilebg.png",
         backgroundColor: "transparent",
-        height: 110,
+        height: 95,
         width: 576,
         id: "rowView",
         SubCategories: "undefined" != typeof $model.__transform["SubCategories"] ? $model.__transform["SubCategories"] : $model.get("SubCategories")
@@ -17,9 +17,9 @@ function Controller() {
     $.__views.rowView && $.addTopLevelView($.__views.rowView);
     $.__views.leftImage = Ti.UI.createImageView({
         image: "/aimages/item1.png",
-        height: 95,
-        width: 95,
-        top: 8,
+        height: 70,
+        width: 70,
+        top: 12,
         left: 8,
         id: "leftImage"
     });
@@ -27,12 +27,12 @@ function Controller() {
     $.__views.primaryLabel = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 25,
+            fontSize: 20,
             fontWeight: "bold"
         },
         color: "#A4451C",
         top: 8,
-        left: 108,
+        left: 90,
         height: Ti.UI.SIZE,
         id: "primaryLabel",
         text: "undefined" != typeof $model.__transform["Name"] ? $model.__transform["Name"] : $model.get("Name")
@@ -41,21 +41,21 @@ function Controller() {
     $.__views.subtitle = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 22,
+            fontSize: 16,
             fontWeight: "normal"
         },
         color: "#806754",
-        top: 42,
-        left: 110,
+        top: 8,
+        left: 95,
         height: Ti.UI.SIZE,
         id: "subtitle"
     });
     $.__views.rowView.add($.__views.subtitle);
     $.__views.rightImage = Ti.UI.createImageView({
         image: "/aimages/arrow2.png",
-        height: 33,
+        height: 25,
         width: 14,
-        top: 37,
+        top: 35,
         right: 10,
         id: "rightImage"
     });

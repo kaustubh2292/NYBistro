@@ -7,7 +7,7 @@
 	</TableViewRow>
 	
 	<TableViewRow class="catrowandroid" id="rowView" platform="android" SubCategories="{SubCategories}">
-		<ImageView class="leftandroid" id="leftImage"/>
+		<ImageView class="leftandroid" id="leftImage" />
 		<Label class="titleandroid" id="primaryLabel" text="{Name}"/>
 		<Label class="subtitleandroid" id="subtitle"/>
 		<ImageView class="rightandroid" id="rightImage"/>

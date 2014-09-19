@@ -20,10 +20,10 @@
 		<View class="cartrowdroid" id="rowContainer">
 			<ImageView class="leftdroid" id="leftImage"/>
 			<Label class="textformatdroid" id="primaryLabel" text="{ItemName}"/>
-			<Label class="subtextformatdroid" id="price" top="32" text="{ItemPrice}"/>
-			<Label class="subtextformatdroid" id="quantity" top="55" />
-			<Button class="updatebtndroid" id="btnChangeQty" top="80" left="110" width="60" height="35" title="Update" />
-			<Button id="btnDelete" top="30" left="380" height="30" width="35" backgroundImage="/aimages/btndelete.png" />
+			<Label class="subtextformatdroid" id="price" top="25" text="{ItemPrice}"/>
+			<Label class="subtextformatdroid" id="quantity" top="35" />
+			<Button class="updatebtndroid" id="btnChangeQty" top="60" left="110" width="50" height="25" title="Update" />
+			<Button id="btnDelete" top="30" left="250" height="20" width="23" backgroundImage="/aimages/btndelete.png" />
 		</View>
 		<!--<OptionDialog id="qtyOptions" title="Select Qunatity" platform="android">
 			<Options>

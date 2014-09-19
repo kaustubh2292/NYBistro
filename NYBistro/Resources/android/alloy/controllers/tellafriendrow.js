@@ -16,26 +16,28 @@ function Controller() {
         left: "10",
         top: "10",
         bottom: "10",
+        height: "25",
+        width: "28",
         id: "imgViewIcon"
     });
     $.__views.__alloyId138.add($.__views.imgViewIcon);
     $.__views.lblTitle = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 20,
+            fontSize: 16,
             fontWeight: "bold"
         },
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblTitle",
-        left: "70"
+        left: "50"
     });
     $.__views.__alloyId138.add($.__views.lblTitle);
     $.__views.shareChkBox = Ti.UI.createButton({
         backgroundImage: "/aimages/chkboxunchecked.png",
-        width: "25",
-        height: "25",
-        left: "360",
+        width: "20",
+        height: "20",
+        right: "20",
         id: "shareChkBox"
     });
     $.__views.__alloyId138.add($.__views.shareChkBox);

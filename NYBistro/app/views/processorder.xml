@@ -70,11 +70,11 @@
 		<ScrollView id="scrollView" showVerticalScrollIndicator="true" showshowHorizontalScrollIndicator="false" height="100%">
 
 			<View id="contentView" top="5" layout="vertical">
-				<View id="optionDisplay" top="10" width="453" height="50" layout="horizontal" backgroundImage="/aimages/optionsviewbkg.png" >
-					<Label class="textformatdroid" id="lblChooseOptions" top="10" left="4" text="Choose options to add" />
+				<View id="optionDisplay" top="10" width="310" height="30" layout="horizontal" backgroundImage="/aimages/optionsviewbkg.png" >
+					<Label class="textformatdroid" id="lblChooseOptions" top="5" left="4" text="Choose options to add" />
 					<!--<Button class="showoptionsdroid" id="btnShowHideOptions" top="12" left="245"/>-->
 				</View>
-				<View id = "optiontablecontainer" width="455" height="100" >
+				<View id = "optiontablecontainer" width="310" height="70" >
 				<TableView id="optionsTable" top="5" height="95%" borderWidth="1" borderRadius="10" borderColor="black"  allowsSelection="false" dataCollection="OptionalItem">
 				<Require src="optionsrow" />
 				</TableView>
@@ -84,49 +84,49 @@
 				<!--<TableView id="optionsTable" top="5" height="45" borderWidth="1" borderRadius="10" borderColor="#806754" width="95%" footerTitle="" allowsSelection="false" />-->
 				<!--<View id="deliveryOptions"width="453" height="50" backgroundImage="/images/optionsviewbkg.png">-->
 				
-				<View id="deliveryOptions" top="5" width="453" height="50" layout="horizontal"  borderRadius="10" borderColor="blue" borderWidth="1">
+				<View id="deliveryOptions" top="10" width="310" height="30" layout="horizontal"  borderRadius="10" borderColor="blue" borderWidth="1">
 					<Button id="btnCarryOut" class="carryout"/>
 					<Button id="btnDelivery" class="delivery"/>
 					<Button id="btnEathere"   class="eathere"/>
 				</View>
 				
 								
-				<View id="subtotalView" top="10" backgroundImage="/aimages/optionsviewbkg.png" width="453" height="50" layout="horizontal">
-					<Label class ="textformatdroid" id="lblSubTotalText" top="12" left="4" text="Sub Total:" textAlign="left" />
-					<Label class="totalvaldroid" id="lblSubtotalVal" top="12" left="300"/>
+				<View id="subtotalView" top="7" backgroundImage="/aimages/optionsviewbkg.png" width="310" height="30" layout="horizontal">
+					<Label class ="textformatdroid" id="lblSubTotalText" top="5" left="3" text="Sub Total:" textAlign="left" />
+					<Label class="totalvaldroid" id="lblSubtotalVal" top="5" left="190" />
 				</View>
-				<View id="optionalCharges" top="5" backgroundImage="/aimages/optionsviewbkg.png" width="453" height="50" layout="horizontal">
-					<Label class ="textformatdroid" id="lblOptCharges" top="12" left="4" text="Optional Item Charges:" textAlign="left" />
-					<Label class="totalvaldroid" id="lblOptChargesVal" top="12" left="200"/>
+				<View id="optionalCharges" top="3" backgroundImage="/aimages/optionsviewbkg.png" width="310" height="30" layout="horizontal">
+					<Label class ="textformatdroid" id="lblOptCharges" top="5" left="3" text="Optional Item Charges:" textAlign="left" />
+					<Label class="totalvaldroid" id="lblOptChargesVal" top="5" left="100"/>
 				</View>
-				<View id="delCharges" top="5" backgroundImage="/aimages/optionsviewbkg.png" width="453" height="50" layout="horizontal">
-					<Label class ="textformatdroid" id="lblDelCharges" top="12" left="4" text="Delivery Charges:" textAlign="left" />
-					<Label class="totalvaldroid" id="lblDelChargesVal" top="12" left="240" text="$0" />
+				<View id="delCharges" top="3" backgroundImage="/aimages/optionsviewbkg.png" width="310" height="30" layout="horizontal">
+					<Label class ="textformatdroid" id="lblDelCharges" top="5" left="3" text="Delivery Charges:" textAlign="left" />
+					<Label class="totalvaldroid" id="lblDelChargesVal" top="5" left="138" text="$0" />
 				</View>
 				
 				<!--Coupon Information -->
-				<View id="couponsInfo" top="5" backgroundImage="/images/optionsviewbkg.png" width="453" height="0.1" layout="horizontal">
-					<Label class ="textformat" id="lblDiscount" top="10" left="4" text="Coupons Applied" textAlign="left" />
+				<View id="couponsInfo" top="3" backgroundImage="/images/optionsviewbkg.png" width="310" height="0.1" layout="horizontal">
+					<Label class ="textformat" id="lblDiscount" top="5" left="3" text="Coupons Applied" textAlign="left" />
 				</View>
-				<TableView id="couponsTable" top="5" height="0.1" borderWidth="1" borderRadius="10" borderColor="#806754" width="95%" allowsSelection="false" />
+				<TableView id="couponsTable" top="3" height="0.1" borderWidth="1" borderRadius="10" borderColor="#806754" width="95%" allowsSelection="false" />
 				
-				<View id="estTaxes" top="5" backgroundImage="/aimages/optionsviewbkg.png" width="453" height="50" layout="horizontal">
-					<Label class ="textformatdroid" id="lblTaxText" top="12" left="4" text="Estimated Taxes:" textAlign="left" />
-					<Label class="totalvaldroid" id="lblTaxVal" top="12" left="240" text="$ 2.30" />
+				<View id="estTaxes" top="3" backgroundImage="/aimages/optionsviewbkg.png" width="310" height="30" layout="horizontal">
+					<Label class ="textformatdroid" id="lblTaxText" top="5" left="3" text="Estimated Taxes:" textAlign="left" />
+					<Label class="totalvaldroid" id="lblTaxVal" top="5" left="142" text="$2.30" />
 				</View>
-				<View id="totalView" top="10" backgroundImage="/aimages/optionsviewbkg.png" width="453" height="50" layout="horizontal">
-					<Label class ="textformatdroid" id="lblTotalText" top="12" width="220" left="4" text="Total:" textAlign="left" />
-					<Label class="totalvaldroid" id="lblTotalVal" top="12" left="150" />
+				<View id="totalView" top="7" backgroundImage="/aimages/optionsviewbkg.png" width="310" height="30" layout="horizontal">
+					<Label class ="textformatdroid" id="lblTotalText" top="5" left="3" text="Total:" textAlign="left" />
+					<Label class="totalvaldroid" id="lblTotalVal" top="5" left="215" />
 				</View>
-				<View id="paymentOptions" top="15" width="453" height="50" layout="horizontal" backgroundImage="/aimages/optionsviewbkg.png" borderRadius="10" borderColor="blue" borderWidth="1">
+				<View id="paymentOptions" top="10" width="310" height="30" layout="horizontal" backgroundImage="/aimages/optionsviewbkg.png" borderRadius="10" borderColor="blue" borderWidth="1">
 
 					<Button id="btnCash" class="cash"/>
 					<Button id="btnCreditCard" class="crditcard"/>
 					<Button id="btnPaypal"  class="paypal"/>
 
 				</View>
-				<Button id="btnApplyCoupon" backgroundImage='/aimages/btnapplycoupon.png' top="30" bottom="2" width="180" height="50" />
-				<Button id="btnPlaceOrder" backgroundImage='/aimages/btnplaceorderbkg.png' top="30" bottom="2" width="180" height="50" />
+				<Button id="btnApplyCoupon" backgroundImage='/aimages/btnapplycoupon.png' top="15" bottom="2" width="120" height="40" />
+				<Button id="btnPlaceOrder" backgroundImage='/aimages/btnplaceorderbkg.png' top="15" bottom="2" width="120" height="40" />
 				
 			</View>
 

@@ -9,7 +9,7 @@ function Controller() {
     $.__views.rowView = Ti.UI.createTableViewRow({
         backgroundImage: "/aimages/profilebg.png",
         backgroundColor: "transparent",
-        height: 110,
+        height: 95,
         width: 576,
         id: "rowView",
         menuitemid: "undefined" != typeof $model.__transform["MenuItemId"] ? $model.__transform["MenuItemId"] : $model.get("MenuItemId")
@@ -17,22 +17,22 @@ function Controller() {
     $.__views.rowView && $.addTopLevelView($.__views.rowView);
     $.__views.leftImage = Ti.UI.createImageView({
         image: "/aimages/item1.png",
-        height: 95,
-        width: 95,
-        top: 8,
-        left: 8,
+        height: 70,
+        width: 70,
+        top: 12,
+        left: 5,
         id: "leftImage"
     });
     $.__views.rowView.add($.__views.leftImage);
     $.__views.primaryLabel = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 20,
+            fontSize: 16,
             fontWeight: "bold"
         },
         color: "#A4451C",
         top: 8,
-        left: 108,
+        left: 80,
         height: Ti.UI.SIZE,
         id: "primaryLabel",
         text: "undefined" != typeof $model.__transform["Name"] ? $model.__transform["Name"] : $model.get("Name")
@@ -41,26 +41,26 @@ function Controller() {
     $.__views.subtitle = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 12,
             fontWeight: "normal"
         },
         color: "#806754",
-        top: 42,
-        left: 110,
+        top: 35,
+        left: 85,
         height: Ti.UI.SIZE,
-        width: 200,
+        width: 150,
         id: "subtitle",
         text: "undefined" != typeof $model.__transform["Description"] ? $model.__transform["Description"] : $model.get("Description")
     });
     $.__views.rowView.add($.__views.subtitle);
     $.__views.btnPrice = Ti.UI.createButton({
         backgroundImage: "/aimages/pricebutton.png",
-        height: 46,
-        width: 100,
-        top: 26,
-        right: 35,
+        height: 30,
+        width: 60,
+        top: 32,
+        right: 30,
         font: {
-            fontSize: 15,
+            fontSize: 12,
             fontWeight: "bold"
         },
         color: "white",
@@ -70,9 +70,9 @@ function Controller() {
     $.__views.rowView.add($.__views.btnPrice);
     $.__views.rightImage = Ti.UI.createImageView({
         image: "/aimages/arrow2.png",
-        height: 33,
-        width: 14,
-        top: 37,
+        height: 25,
+        width: 12,
+        top: 35,
         right: 10,
         id: "rightImage"
     });

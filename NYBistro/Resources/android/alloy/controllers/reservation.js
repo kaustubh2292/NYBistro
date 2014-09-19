@@ -16,8 +16,8 @@ function Controller() {
     function formatDate(dateString) {
         var current_date = new Date(dateString);
         var dateString = day_names[current_date.getDay()] + ", ";
-        dateString = dateString + month_names[current_date.getMonth()] + ", ";
-        dateString = dateString + " " + current_date.getDate() + " " + current_date.getFullYear();
+        dateString = dateString + month_names[current_date.getMonth()] + "-";
+        dateString = dateString + current_date.getDate() + "-" + current_date.getFullYear();
         return dateString;
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
@@ -54,15 +54,15 @@ function Controller() {
         image: "/aimages/detailfoodimgbkg.png",
         top: "0",
         width: "580",
-        height: "370"
+        height: "230"
     });
     $.__views.foodImageView.add($.__views.foodBkg);
     $.__views.imgFood = Ti.UI.createImageView({
         id: "imgFood",
         image: "/aimages/detailsfoodimage.png",
         top: "5",
-        width: "470",
-        height: "340"
+        width: "350",
+        height: "210"
     });
     $.__views.foodImageView.add($.__views.imgFood);
     $.__views.dateView = Ti.UI.createView({
@@ -75,21 +75,21 @@ function Controller() {
     $.__views.lblDate = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 20,
+            fontSize: 16,
             fontWeight: "bold"
         },
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblDate",
-        left: "40",
+        left: "10",
         text: "Date:"
     });
     $.__views.dateView.add($.__views.lblDate);
     $.__views.txtDate = Ti.UI.createTextField({
         width: "200",
-        height: "50",
+        height: "40",
         backgroundColor: "#e9e7db",
-        borderRadius: "5",
+        borderRadius: "2",
         color: "black",
         id: "txtDate",
         left: "10"
@@ -97,8 +97,8 @@ function Controller() {
     $.__views.dateView.add($.__views.txtDate);
     $.__views.btnUpdateDate = Ti.UI.createButton({
         id: "btnUpdateDate",
-        height: "48.5",
-        width: "29",
+        height: "40",
+        width: "18",
         backgroundImage: "/aimages/btndownarrowbkg.png"
     });
     $.__views.dateView.add($.__views.btnUpdateDate);
@@ -112,36 +112,36 @@ function Controller() {
     $.__views.lblTime = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 20,
+            fontSize: 16,
             fontWeight: "bold"
         },
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblTime",
-        left: "40",
+        left: "10",
         text: "Time:"
     });
     $.__views.timeView.add($.__views.lblTime);
     $.__views.txtTime = Ti.UI.createTextField({
         width: "200",
-        height: "50",
+        height: "40",
         backgroundColor: "#e9e7db",
-        borderRadius: "5",
+        borderRadius: "2",
         color: "black",
         id: "txtTime",
-        left: "10"
+        left: "8"
     });
     $.__views.timeView.add($.__views.txtTime);
     $.__views.btnUpdateTime = Ti.UI.createButton({
         id: "btnUpdateTime",
-        height: "48.5",
-        width: "29",
+        height: "40",
+        width: "18",
         backgroundImage: "/aimages/btndownarrowbkg.png"
     });
     $.__views.timeView.add($.__views.btnUpdateTime);
     $.__views.numberOfPeopleView = Ti.UI.createView({
         id: "numberOfPeopleView",
-        top: "15",
+        top: "10",
         height: Ti.UI.SIZE,
         layout: "horizontal"
     });
@@ -149,29 +149,29 @@ function Controller() {
     $.__views.lblNumberOfPeople = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 20,
+            fontSize: 16,
             fontWeight: "bold"
         },
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblNumberOfPeople",
         text: "Number Of People:",
-        left: "40"
+        left: "10"
     });
     $.__views.numberOfPeopleView.add($.__views.lblNumberOfPeople);
     $.__views.lblQtyNum = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 15,
+            fontSize: 12,
             fontWeight: "bold"
         },
-        width: 60,
-        height: 70,
+        width: 30,
+        height: 40,
         backgroundImage: "/aimages/qtybkg.png",
         color: "#806754",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         id: "lblQtyNum",
-        left: "15",
+        left: "10",
         text: "1"
     });
     $.__views.numberOfPeopleView.add($.__views.lblQtyNum);
@@ -185,30 +185,30 @@ function Controller() {
     $.__views.btnAdd = Ti.UI.createButton({
         id: "btnAdd",
         backgroundImage: "/aimages/qtyadditionbkg.png",
-        height: "35",
-        width: "30"
+        height: "20",
+        width: "25"
     });
     $.__views.btnView.add($.__views.btnAdd);
     $.__views.btnSub = Ti.UI.createButton({
         id: "btnSub",
         backgroundImage: "/aimages/qtysubtractionbkg.png",
-        height: "35",
-        width: "30"
+        height: "20",
+        width: "25"
     });
     $.__views.btnView.add($.__views.btnSub);
     $.__views.btnReserve = Ti.UI.createButton({
         id: "btnReserve",
-        top: "15",
-        height: "50",
-        width: "120",
+        top: "20",
+        height: "35",
+        width: "75",
         backgroundImage: "/aimages/btnreservebkg.png"
     });
     $.__views.containerView.add($.__views.btnReserve);
     $.__views.datePickerView = Ti.UI.createView({
         id: "datePickerView",
-        height: "251",
-        width: "96%",
-        bottom: "-251"
+        height: "150",
+        width: "90%",
+        bottom: "-150"
     });
     $.__views.reservationWnd.add($.__views.datePickerView);
     $.__views.datePicker = Ti.UI.createPicker({
@@ -219,18 +219,18 @@ function Controller() {
     _.extend($, $.__views);
     var osname = "android";
     var month_names = new Array();
-    month_names[month_names.length] = "January";
-    month_names[month_names.length] = "February";
+    month_names[month_names.length] = "Jan";
+    month_names[month_names.length] = "Feb";
     month_names[month_names.length] = "March";
     month_names[month_names.length] = "April";
     month_names[month_names.length] = "May";
     month_names[month_names.length] = "June";
     month_names[month_names.length] = "July";
-    month_names[month_names.length] = "August";
-    month_names[month_names.length] = "September";
-    month_names[month_names.length] = "October";
-    month_names[month_names.length] = "November";
-    month_names[month_names.length] = "December";
+    month_names[month_names.length] = "Aug";
+    month_names[month_names.length] = "Sept";
+    month_names[month_names.length] = "Oct";
+    month_names[month_names.length] = "Nov";
+    month_names[month_names.length] = "Dec";
     var day_names = new Array();
     day_names[day_names.length] = "Sunday";
     day_names[day_names.length] = "Monday";

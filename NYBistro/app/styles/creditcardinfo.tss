@@ -28,19 +28,19 @@
 ".textformatdroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:18,
+		fontSize:15,
 		fontWeight:'bold'
 	},
 	top:'8',
-	left:'9',
+	left:'8',
 	color:'#a4451c',
 	height:Ti.UI.SIZE
 },
 ".textfieldroid": {
-	top:'8',
+	top:'5',
 	left:'8',
-	width:'300',
-	height:'50',
+	width:'200',
+	height:'40',
 	color : 'black',
 	backgroundColor:'#e9e7db',
 	borderRadius:'5',
@@ -49,7 +49,7 @@
 
 ".visa":{
 	height : Ti.UI.SIZE,
-	width : 150,
+	width : 102,
 	left:0,
 	title:'Visa',
 	color:'black',
@@ -61,7 +61,7 @@
 },
 ".master":{
 	height : Ti.UI.SIZE,
-	width : 150,
+	width : 102,
 	title:'Master',
 	color:'black',
 	backgroundColor:'#fff',
@@ -71,7 +71,7 @@
 },
 ".amex":{
 	height : Ti.UI.SIZE,
-	width : 150,
+	width : 102,
 	title:'Amex',
 	color:'black',
 	backgroundColor:'#fff',

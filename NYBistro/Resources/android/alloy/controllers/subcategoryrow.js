@@ -7,19 +7,19 @@ function Controller() {
     var $ = this;
     var exports = {};
     $.__views.rowView = Ti.UI.createTableViewRow({
-        backgroundImage: "/images/categorybkg.png",
+        backgroundImage: "/aimages/profilebg.png",
         backgroundColor: "transparent",
-        height: 66,
-        width: Ti.UI.FILL,
+        height: 95,
+        width: 576,
         id: "rowView",
         subcatid: "undefined" != typeof $model.__transform["SubCatId"] ? $model.__transform["SubCatId"] : $model.get("SubCatId")
     });
     $.__views.rowView && $.addTopLevelView($.__views.rowView);
     $.__views.leftImage = Ti.UI.createImageView({
-        image: "/images/foodimg.png",
-        height: 47,
-        width: 47,
-        top: 8,
+        image: "/aimages/item1.png",
+        height: 70,
+        width: 70,
+        top: 12,
         left: 8,
         id: "leftImage"
     });
@@ -27,12 +27,12 @@ function Controller() {
     $.__views.primaryLabel = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 15,
+            fontSize: 20,
             fontWeight: "bold"
         },
-        color: "#a4451c",
-        top: 20,
-        left: 60,
+        color: "#A4451C",
+        top: 8,
+        left: 90,
         height: Ti.UI.SIZE,
         id: "primaryLabel",
         text: "undefined" != typeof $model.__transform["Name"] ? $model.__transform["Name"] : $model.get("Name")
@@ -41,21 +41,21 @@ function Controller() {
     $.__views.subtitle = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 12,
+            fontSize: 16,
             fontWeight: "normal"
         },
         color: "#806754",
-        top: 32,
-        left: 62,
+        top: 8,
+        left: 95,
         height: Ti.UI.SIZE,
         id: "subtitle"
     });
     $.__views.rowView.add($.__views.subtitle);
     $.__views.rightImage = Ti.UI.createImageView({
-        image: "/images/arrowbrown.png",
-        height: 21,
+        image: "/aimages/arrow2.png",
+        height: 25,
         width: 14,
-        top: 22,
+        top: 35,
         right: 10,
         id: "rightImage"
     });

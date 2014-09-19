@@ -109,8 +109,8 @@ function Controller() {
     $.__views.optionDisplay = Ti.UI.createView({
         id: "optionDisplay",
         top: "10",
-        width: "453",
-        height: "50",
+        width: "310",
+        height: "30",
         layout: "horizontal",
         backgroundImage: "/aimages/optionsviewbkg.png"
     });
@@ -118,21 +118,21 @@ function Controller() {
     $.__views.lblChooseOptions = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblChooseOptions",
-        top: "10",
+        top: "5",
         left: "4",
         text: "Choose options to add"
     });
     $.__views.optionDisplay.add($.__views.lblChooseOptions);
     $.__views.optiontablecontainer = Ti.UI.createView({
         id: "optiontablecontainer",
-        width: "455",
-        height: "100"
+        width: "310",
+        height: "70"
     });
     $.__views.contentView.add($.__views.optiontablecontainer);
     $.__views.optionsTable = Ti.UI.createTableView({
@@ -149,9 +149,9 @@ function Controller() {
     __alloyId96.on("fetch destroy change add remove reset", __alloyId97);
     $.__views.deliveryOptions = Ti.UI.createView({
         id: "deliveryOptions",
-        top: "5",
-        width: "453",
-        height: "50",
+        top: "10",
+        width: "310",
+        height: "30",
         layout: "horizontal",
         borderRadius: "10",
         borderColor: "blue",
@@ -160,7 +160,7 @@ function Controller() {
     $.__views.contentView.add($.__views.deliveryOptions);
     $.__views.btnCarryOut = Ti.UI.createButton({
         height: Ti.UI.SIZE,
-        width: 150,
+        width: 102,
         left: 0,
         title: "Carry Out",
         color: "black",
@@ -172,7 +172,7 @@ function Controller() {
     $.__views.deliveryOptions.add($.__views.btnCarryOut);
     $.__views.btnDelivery = Ti.UI.createButton({
         height: Ti.UI.SIZE,
-        width: 150,
+        width: 102,
         title: "Delivery",
         color: "black",
         backgroundColor: "#fff",
@@ -183,7 +183,7 @@ function Controller() {
     $.__views.deliveryOptions.add($.__views.btnDelivery);
     $.__views.btnEathere = Ti.UI.createButton({
         height: Ti.UI.SIZE,
-        width: 150,
+        width: 102,
         title: "Eat Here",
         color: "black",
         backgroundColor: "#fff",
@@ -192,24 +192,24 @@ function Controller() {
     $.__views.deliveryOptions.add($.__views.btnEathere);
     $.__views.subtotalView = Ti.UI.createView({
         id: "subtotalView",
-        top: "10",
+        top: "7",
         backgroundImage: "/aimages/optionsviewbkg.png",
-        width: "453",
-        height: "50",
+        width: "310",
+        height: "30",
         layout: "horizontal"
     });
     $.__views.contentView.add($.__views.subtotalView);
     $.__views.lblSubTotalText = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblSubTotalText",
-        top: "12",
-        left: "4",
+        top: "5",
+        left: "3",
         text: "Sub Total:",
         textAlign: "left"
     });
@@ -217,36 +217,36 @@ function Controller() {
     $.__views.lblSubtotalVal = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         color: "#79b622",
         height: Ti.UI.SIZE,
         id: "lblSubtotalVal",
-        top: "12",
-        left: "300"
+        top: "5",
+        left: "190"
     });
     $.__views.subtotalView.add($.__views.lblSubtotalVal);
     $.__views.optionalCharges = Ti.UI.createView({
         id: "optionalCharges",
-        top: "5",
+        top: "3",
         backgroundImage: "/aimages/optionsviewbkg.png",
-        width: "453",
-        height: "50",
+        width: "310",
+        height: "30",
         layout: "horizontal"
     });
     $.__views.contentView.add($.__views.optionalCharges);
     $.__views.lblOptCharges = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblOptCharges",
-        top: "12",
-        left: "4",
+        top: "5",
+        left: "3",
         text: "Optional Item Charges:",
         textAlign: "left"
     });
@@ -254,36 +254,36 @@ function Controller() {
     $.__views.lblOptChargesVal = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         color: "#79b622",
         height: Ti.UI.SIZE,
         id: "lblOptChargesVal",
-        top: "12",
-        left: "200"
+        top: "5",
+        left: "100"
     });
     $.__views.optionalCharges.add($.__views.lblOptChargesVal);
     $.__views.delCharges = Ti.UI.createView({
         id: "delCharges",
-        top: "5",
+        top: "3",
         backgroundImage: "/aimages/optionsviewbkg.png",
-        width: "453",
-        height: "50",
+        width: "310",
+        height: "30",
         layout: "horizontal"
     });
     $.__views.contentView.add($.__views.delCharges);
     $.__views.lblDelCharges = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblDelCharges",
-        top: "12",
-        left: "4",
+        top: "5",
+        left: "3",
         text: "Delivery Charges:",
         textAlign: "left"
     });
@@ -291,22 +291,22 @@ function Controller() {
     $.__views.lblDelChargesVal = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         color: "#79b622",
         height: Ti.UI.SIZE,
         id: "lblDelChargesVal",
-        top: "12",
-        left: "240",
+        top: "5",
+        left: "138",
         text: "$0"
     });
     $.__views.delCharges.add($.__views.lblDelChargesVal);
     $.__views.couponsInfo = Ti.UI.createView({
         id: "couponsInfo",
-        top: "5",
+        top: "3",
         backgroundImage: "/images/optionsviewbkg.png",
-        width: "453",
+        width: "310",
         height: "0.1",
         layout: "horizontal"
     });
@@ -321,14 +321,14 @@ function Controller() {
         textAlign: "left",
         height: Ti.UI.SIZE,
         id: "lblDiscount",
-        top: "10",
-        left: "4",
+        top: "5",
+        left: "3",
         text: "Coupons Applied"
     });
     $.__views.couponsInfo.add($.__views.lblDiscount);
     $.__views.couponsTable = Ti.UI.createTableView({
         id: "couponsTable",
-        top: "5",
+        top: "3",
         height: "0.1",
         borderWidth: "1",
         borderRadius: "10",
@@ -339,24 +339,24 @@ function Controller() {
     $.__views.contentView.add($.__views.couponsTable);
     $.__views.estTaxes = Ti.UI.createView({
         id: "estTaxes",
-        top: "5",
+        top: "3",
         backgroundImage: "/aimages/optionsviewbkg.png",
-        width: "453",
-        height: "50",
+        width: "310",
+        height: "30",
         layout: "horizontal"
     });
     $.__views.contentView.add($.__views.estTaxes);
     $.__views.lblTaxText = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblTaxText",
-        top: "12",
-        left: "4",
+        top: "5",
+        left: "3",
         text: "Estimated Taxes:",
         textAlign: "left"
     });
@@ -364,38 +364,37 @@ function Controller() {
     $.__views.lblTaxVal = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         color: "#79b622",
         height: Ti.UI.SIZE,
         id: "lblTaxVal",
-        top: "12",
-        left: "240",
-        text: "$ 2.30"
+        top: "5",
+        left: "142",
+        text: "$2.30"
     });
     $.__views.estTaxes.add($.__views.lblTaxVal);
     $.__views.totalView = Ti.UI.createView({
         id: "totalView",
-        top: "10",
+        top: "7",
         backgroundImage: "/aimages/optionsviewbkg.png",
-        width: "453",
-        height: "50",
+        width: "310",
+        height: "30",
         layout: "horizontal"
     });
     $.__views.contentView.add($.__views.totalView);
     $.__views.lblTotalText = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblTotalText",
-        top: "12",
-        width: "220",
-        left: "4",
+        top: "5",
+        left: "3",
         text: "Total:",
         textAlign: "left"
     });
@@ -403,21 +402,21 @@ function Controller() {
     $.__views.lblTotalVal = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18,
+            fontSize: 15,
             fontWeight: "bold"
         },
         color: "#79b622",
         height: Ti.UI.SIZE,
         id: "lblTotalVal",
-        top: "12",
-        left: "150"
+        top: "5",
+        left: "215"
     });
     $.__views.totalView.add($.__views.lblTotalVal);
     $.__views.paymentOptions = Ti.UI.createView({
         id: "paymentOptions",
-        top: "15",
-        width: "453",
-        height: "50",
+        top: "10",
+        width: "310",
+        height: "30",
         layout: "horizontal",
         backgroundImage: "/aimages/optionsviewbkg.png",
         borderRadius: "10",
@@ -427,7 +426,7 @@ function Controller() {
     $.__views.contentView.add($.__views.paymentOptions);
     $.__views.btnCash = Ti.UI.createButton({
         height: Ti.UI.SIZE,
-        width: 150,
+        width: 102,
         left: 0,
         title: "Cash",
         color: "black",
@@ -439,7 +438,7 @@ function Controller() {
     $.__views.paymentOptions.add($.__views.btnCash);
     $.__views.btnCreditCard = Ti.UI.createButton({
         height: Ti.UI.SIZE,
-        width: 150,
+        width: 102,
         title: "Credit Card",
         color: "black",
         backgroundColor: "#fff",
@@ -450,7 +449,7 @@ function Controller() {
     $.__views.paymentOptions.add($.__views.btnCreditCard);
     $.__views.btnPaypal = Ti.UI.createButton({
         height: Ti.UI.SIZE,
-        width: 150,
+        width: 102,
         title: "Paypal",
         color: "black",
         backgroundColor: "#fff",
@@ -460,19 +459,19 @@ function Controller() {
     $.__views.btnApplyCoupon = Ti.UI.createButton({
         id: "btnApplyCoupon",
         backgroundImage: "/aimages/btnapplycoupon.png",
-        top: "30",
+        top: "15",
         bottom: "2",
-        width: "180",
-        height: "50"
+        width: "120",
+        height: "40"
     });
     $.__views.contentView.add($.__views.btnApplyCoupon);
     $.__views.btnPlaceOrder = Ti.UI.createButton({
         id: "btnPlaceOrder",
         backgroundImage: "/aimages/btnplaceorderbkg.png",
-        top: "30",
+        top: "15",
         bottom: "2",
-        width: "180",
-        height: "50"
+        width: "120",
+        height: "40"
     });
     $.__views.contentView.add($.__views.btnPlaceOrder);
     exports.destroy = function() {
@@ -490,7 +489,7 @@ function Controller() {
         return rndedNum;
     };
     var user = Alloy.Models.instance("user");
-    $.lblSubtotalVal.text = orderData.get("SubTotal");
+    $.lblSubtotalVal.text = "$" + orderData.get("SubTotal");
     orderTotal = roundNumber(orderData.get("SubTotal") + 2.3, 2);
     orderData.set("Total", orderTotal);
     $.lblTotalVal.text = "$" + orderTotal;
@@ -617,7 +616,7 @@ function Controller() {
                     chkbox.backgroundImage = "/aimages/chkboxchecked.png";
                     $.optionalCharges.animate({
                         duration: 200,
-                        height: "50"
+                        height: "30dp"
                     });
                     optChargeCnt++;
                     var optionalItem = optionsCol.at(e.index);
@@ -641,7 +640,7 @@ function Controller() {
             }
         });
         var movelabel = {
-            top: 20,
+            top: "15dp",
             duration: 1e3
         };
         var collapsed = true;
@@ -649,7 +648,7 @@ function Controller() {
         $.btnDelivery.addEventListener("click", function() {
             $.delCharges.animate({
                 duration: 200,
-                height: "50"
+                height: "30dp"
             });
             $.btnCarryOut.backgroundColor = "#fff";
             $.btnEathere.backgroundColor = "#fff";

@@ -27,7 +27,7 @@
 ".textformatandroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:22,
+		fontSize:18,
 		fontWeight:'bold'
 	},
 	top:'8',
@@ -37,10 +37,11 @@
 },
 ".textfielddroid": {
 	top:'8',
-	left:'8',
-	width:'450',
-	height:'50',
+	left:'9',
+	width:'220',
+	height:'40',
+	color:'black',
 	backgroundColor:'#e9e7db',
-	borderRadius:'5'
+	borderRadius:'2'
 	
 }
