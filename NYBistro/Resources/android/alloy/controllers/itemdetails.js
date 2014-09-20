@@ -47,7 +47,7 @@ function Controller() {
     $.__views.imgFood = Ti.UI.createImageView({
         id: "imgFood",
         image: "/aimages/detailsfoodimage.png",
-        width: "350",
+        width: "330",
         height: "210",
         top: "10"
     });

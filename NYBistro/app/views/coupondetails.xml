@@ -13,16 +13,15 @@
 	<!--Android-->
 	<Window class="containerandroid" id='winCouponDetails' platform="android" statusBarHidden="false" navBarHidden="false">
 		<View id="containerView" height="100%" width="100%">
-			<ImageView id="foodBkg" image="/aimages/detailfoodimgbkg.png" width="550" height="370" top="0" />
-			<ImageView id="imgFood" image="/aimages/detailsfoodimage.png" width="470" height="340" top="10"/>
+			<ImageView id="foodBkg" image="/aimages/detailfoodimgbkg.png" width="550" height="230" top="0" />
+			<ImageView id="imgFood" image="/aimages/detailsfoodimage.png" width="330" height="210" top="10"/>
 			
-			<Label class="textformatandroid" id="lblFoodName"  top="371" left="40" />
+			<View id="couponTxtBkg" backgroundImage="/aimages/profilebg.png" height="80" width="320" top="240" borderRadius="5">
+				<Label class="textformatandroid" id="lblFoodName"  top="10" left="30" />
+				<Label class="shortdescandroid" id="lblCoupondesc" top="40" left="30"/>
+			</View>
 			
-			<View id="couponTxtBkg" backgroundImage="/aimages/profilebg.png" height="150" width="470" top="430" borderRadius="5">
-							<Label class="shortdescandroid" id="lblCoupondesc" />
-						</View>
-			
-		<Button id="btnAction" width="200" height="50" backgroundImage="/aimages/redeembtnbkg.png" top="580" left="140" bottom="2"/>
+		<Button id="btnAction" width="100" height="40" backgroundImage="/aimages/redeembtnbkg.png" top="360" left="115" bottom="2"/>
 		</View>
 	</Window>
 </Alloy>

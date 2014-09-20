@@ -106,9 +106,9 @@
 				
 				<!--Coupon Information -->
 				<View id="couponsInfo" top="3" backgroundImage="/images/optionsviewbkg.png" width="310" height="0.1" layout="horizontal">
-					<Label class ="textformat" id="lblDiscount" top="5" left="3" text="Coupons Applied" textAlign="left" />
+					<Label class ="textformatdroid" id="lblDiscount" top="5" left="3" text="Coupons Applied" textAlign="left" />
 				</View>
-				<TableView id="couponsTable" top="3" height="0.1" borderWidth="1" borderRadius="10" borderColor="#806754" width="95%" allowsSelection="false" />
+				<TableView id="couponsTable" top="3" height="0.1" borderWidth="1" borderRadius="10" borderColor="#806754" width="310" allowsSelection="false" />
 				
 				<View id="estTaxes" top="3" backgroundImage="/aimages/optionsviewbkg.png" width="310" height="30" layout="horizontal">
 					<Label class ="textformatdroid" id="lblTaxText" top="5" left="3" text="Estimated Taxes:" textAlign="left" />

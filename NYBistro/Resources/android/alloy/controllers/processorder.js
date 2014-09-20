@@ -318,12 +318,12 @@ function Controller() {
             fontWeight: "bold"
         },
         color: "#a4451c",
-        textAlign: "left",
         height: Ti.UI.SIZE,
         id: "lblDiscount",
         top: "5",
         left: "3",
-        text: "Coupons Applied"
+        text: "Coupons Applied",
+        textAlign: "left"
     });
     $.__views.couponsInfo.add($.__views.lblDiscount);
     $.__views.couponsTable = Ti.UI.createTableView({
@@ -333,7 +333,7 @@ function Controller() {
         borderWidth: "1",
         borderRadius: "10",
         borderColor: "#806754",
-        width: "95%",
+        width: "310",
         allowsSelection: "false"
     });
     $.__views.contentView.add($.__views.couponsTable);

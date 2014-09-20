@@ -31,7 +31,7 @@ if (Ti.Platform.osname == "android") {
 		if (Ti.Platform.Android.API_LEVEL >= 11) {
 			//alert('api is 11');
 			var actionBar = $.menuWin.getActivity().actionBar;
-			actionBar.setTitle('CATEGORY');
+			actionBar.setTitle('MENU');
 			actionBar.setDisplayHomeAsUp(true);
 			actionBar.setBackgroundImage('/aimages/toolbarbg.png');
 			actionBar.setIcon('/aimages/arrowbutton.png');

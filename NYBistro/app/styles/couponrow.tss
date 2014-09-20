@@ -49,7 +49,7 @@
 },
 ".leftandroid": {
 	height:60,
-	width:110,
+	width:95,
 	top:15,
 	left:5
 },
@@ -68,20 +68,20 @@
 	},
 	color:'#a4451c',
 	top:8,
-	left:150,
+	left:110,
 	height:Ti.UI.SIZE,
-	width:10
+	width:170
 },
 ".subtitleandroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:15,
+		fontSize:13,
 		fontWeight:'normal'
 	},
 	color:'#806754',
 	top:37,
-	left:122,
+	left:112,
 	height:Ti.UI.SIZE,
-	width:140
+	width:150
 }
 

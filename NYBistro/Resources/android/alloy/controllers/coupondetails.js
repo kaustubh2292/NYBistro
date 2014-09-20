@@ -23,58 +23,60 @@ function Controller() {
         id: "foodBkg",
         image: "/aimages/detailfoodimgbkg.png",
         width: "550",
-        height: "370",
+        height: "230",
         top: "0"
     });
     $.__views.containerView.add($.__views.foodBkg);
     $.__views.imgFood = Ti.UI.createImageView({
         id: "imgFood",
         image: "/aimages/detailsfoodimage.png",
-        width: "470",
-        height: "340",
+        width: "330",
+        height: "210",
         top: "10"
     });
     $.__views.containerView.add($.__views.imgFood);
+    $.__views.couponTxtBkg = Ti.UI.createView({
+        id: "couponTxtBkg",
+        backgroundImage: "/aimages/profilebg.png",
+        height: "80",
+        width: "320",
+        top: "240",
+        borderRadius: "5"
+    });
+    $.__views.containerView.add($.__views.couponTxtBkg);
     $.__views.lblFoodName = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 30,
+            fontSize: 20,
             fontWeight: "bold"
         },
         color: "#a4451c",
         height: Ti.UI.SIZE,
         id: "lblFoodName",
-        top: "371",
-        left: "40"
+        top: "10",
+        left: "30"
     });
-    $.__views.containerView.add($.__views.lblFoodName);
-    $.__views.couponTxtBkg = Ti.UI.createView({
-        id: "couponTxtBkg",
-        backgroundImage: "/aimages/profilebg.png",
-        height: "150",
-        width: "470",
-        top: "430",
-        borderRadius: "5"
-    });
-    $.__views.containerView.add($.__views.couponTxtBkg);
+    $.__views.couponTxtBkg.add($.__views.lblFoodName);
     $.__views.lblCoupondesc = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 15,
+            fontSize: 14,
             fontWeight: "normal"
         },
         color: "#806754",
         height: Ti.UI.SIZE,
-        id: "lblCoupondesc"
+        id: "lblCoupondesc",
+        top: "40",
+        left: "30"
     });
     $.__views.couponTxtBkg.add($.__views.lblCoupondesc);
     $.__views.btnAction = Ti.UI.createButton({
         id: "btnAction",
-        width: "200",
-        height: "50",
+        width: "100",
+        height: "40",
         backgroundImage: "/aimages/redeembtnbkg.png",
-        top: "580",
-        left: "140",
+        top: "360",
+        left: "115",
         bottom: "2"
     });
     $.__views.containerView.add($.__views.btnAction);

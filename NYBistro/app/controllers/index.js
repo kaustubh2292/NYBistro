@@ -17,7 +17,6 @@ function menuClicked(e) {
 		wndmenu.open();
 
 	}
-	;
 };
 
 function mapClicked(e) {

@@ -16,7 +16,7 @@ function Controller() {
     $.__views.rowView && $.addTopLevelView($.__views.rowView);
     $.__views.leftImage = Ti.UI.createImageView({
         height: 60,
-        width: 110,
+        width: 95,
         top: 15,
         left: 5,
         id: "leftImage",
@@ -31,9 +31,9 @@ function Controller() {
         },
         color: "#a4451c",
         top: 8,
-        left: 150,
+        left: 110,
         height: Ti.UI.SIZE,
-        width: 10,
+        width: 170,
         id: "primaryLabel",
         text: "undefined" != typeof $model.__transform["CouponName"] ? $model.__transform["CouponName"] : $model.get("CouponName")
     });
@@ -41,14 +41,14 @@ function Controller() {
     $.__views.subtitle = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 15,
+            fontSize: 13,
             fontWeight: "normal"
         },
         color: "#806754",
         top: 37,
-        left: 122,
+        left: 112,
         height: Ti.UI.SIZE,
-        width: 140,
+        width: 150,
         id: "subtitle",
         text: "undefined" != typeof $model.__transform["CouponDesc"] ? $model.__transform["CouponDesc"] : $model.get("CouponDesc")
     });

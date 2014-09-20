@@ -8,7 +8,7 @@ function Controller() {
     var exports = {};
     $.__views.rowView = Ti.UI.createTableViewRow({
         backgroundImage: "/aimages/profilebg.png",
-        height: 110,
+        height: 90,
         width: 576,
         id: "rowView",
         statusBarHidden: "false",
@@ -17,8 +17,8 @@ function Controller() {
     $.__views.rowView && $.addTopLevelView($.__views.rowView);
     $.__views.leftImage = Ti.UI.createImageView({
         image: "/aimages/item1.png",
-        height: 95,
-        width: 95,
+        height: 70,
+        width: 70,
         top: 10,
         left: 8,
         id: "leftImage"
@@ -27,12 +27,12 @@ function Controller() {
     $.__views.primaryLabel = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 25,
+            fontSize: 18,
             fontWeight: "bold"
         },
         color: "#A4451C",
         top: 10,
-        left: 108,
+        left: 80,
         height: Ti.UI.SIZE,
         id: "primaryLabel",
         text: "undefined" != typeof $model.__transform["CouponName"] ? $model.__transform["CouponName"] : $model.get("CouponName")
@@ -41,12 +41,12 @@ function Controller() {
     $.__views.subtitle = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 21.5,
+            fontSize: 13,
             fontWeight: "normal"
         },
         color: "#806754",
-        top: 42,
-        left: 110,
+        top: 35,
+        left: 82,
         height: Ti.UI.SIZE,
         id: "subtitle",
         text: "undefined" != typeof $model.__transform["CouponDesc"] ? $model.__transform["CouponDesc"] : $model.get("CouponDesc")
@@ -55,31 +55,31 @@ function Controller() {
     $.__views.lblExpiry = Ti.UI.createLabel({
         font: {
             fontFamily: "Arial",
-            fontSize: 18.5,
+            fontSize: 14,
             fontWeight: "bold"
         },
         color: "#806754",
-        top: 75,
-        left: 110,
+        top: 55,
+        left: 82,
         height: Ti.UI.SIZE,
         id: "lblExpiry",
         text: "undefined" != typeof $model.__transform["CouponExp"] ? $model.__transform["CouponExp"] : $model.get("CouponExp")
     });
     $.__views.rowView.add($.__views.lblExpiry);
     $.__views.lblloyaltycoupon = Ti.UI.createLabel({
-        height: 38,
-        width: 80,
+        height: 25,
+        width: 50,
         top: 10,
-        right: 110,
+        right: 70,
         id: "lblloyaltycoupon",
         backgroundImage: "undefined" != typeof $model.__transform["CouponImage"] ? $model.__transform["CouponImage"] : $model.get("CouponImage")
     });
     $.__views.rowView.add($.__views.lblloyaltycoupon);
     $.__views.rightImage = Ti.UI.createImageView({
         image: "/aimages/arrow1.png",
-        height: 33,
+        height: 30,
         width: 14,
-        top: 37,
+        top: 30,
         right: 10,
         id: "rightImage"
     });

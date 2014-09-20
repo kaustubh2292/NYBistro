@@ -27,7 +27,7 @@
 ".textformatandroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:30,
+		fontSize:20,
 		fontWeight:'bold'
 	},
 	color:'#a4451c',
@@ -36,7 +36,7 @@
 ".shortdescandroid": {
 	font:{
 		fontFamily: 'Arial',
-		fontSize:15,
+		fontSize:14,
 		fontWeight:'normal'
 	},
 	color:'#806754',
