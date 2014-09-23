@@ -1,3 +1,5 @@
+// Test fot GIT
+
 var osname = Ti.Platform.osname;
 
 var orderData = Alloy.Models.instance("Order");
